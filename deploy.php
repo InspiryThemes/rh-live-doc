@@ -73,7 +73,7 @@ $commands = array(
 $output = "\n";
 
 $log = "####### ".date('Y-m-d H:i:s'). " #######\n";
-$log = "Origin IP: " . $IP . " \n";
+$log .= "Origin IP: " . $IP . " \n";
 foreach($commands AS $command){
     // Run it
     $tmp = shell_exec("$command 2>&1");
