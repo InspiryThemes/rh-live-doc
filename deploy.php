@@ -5,6 +5,7 @@
 
 $TITLE   = 'Git Deployment Hamster';
 $VERSION = '0.11';
+$IP = _SERVER['REMOTE_ADDR'];
 
 echo <<<EOT
 <!DOCTYPE HTML>
@@ -17,7 +18,7 @@ echo <<<EOT
 <pre>
   o-o    $TITLE
  /\\"/\   v$VERSION
-(`=*=') 
+(`=*=')     IP:$IP
  ^---^`-.
 
 
