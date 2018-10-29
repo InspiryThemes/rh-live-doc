@@ -5,7 +5,7 @@
 
 $TITLE   = 'Git Deployment Hamster';
 $VERSION = '0.11';
-$IP = _SERVER['REMOTE_ADDR'];
+$IP = $_SERVER['REMOTE_ADDR'];
 
 echo <<<EOT
 <!DOCTYPE HTML>
