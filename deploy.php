@@ -60,36 +60,29 @@ flush();
 // Actually run the update
 
 $commands = array(
-	'echo $PWD',
 	'whoami',
-	'git pull',
+	'git pull origin master',
 	'git status',
-	'git submodule sync',
-	'git submodule update',
-	'git submodule status',
-    'test -e /usr/share/update-notifier/notify-reboot-required && echo "system restart required"',
 );
 
-$output = "\n";
+//$output = "\n";
 
 $log = "####### ".date('Y-m-d H:i:s'). " #######\n";
 $log .= "Origin IP: " . $IP . " \n";
 foreach($commands AS $command){
     // Run it
-    $tmp = shell_exec("$command 2>&1");
+    $tmp = shell_exec($command);
     // Output
-    $output .= "<span style=\"color: #6BE234;\">\$</span> <span style=\"color: #729FCF;\">{$command}\n</span>";
-    $output .= htmlentities(trim($tmp)) . "\n";
-
-    $log  .= "\$ $command\n".trim($tmp)."\n";
+    //$output .= "<span style=\"color: #6BE234;\">\$</span> <span style=\"color: #729FCF;\">{$command}\n</span>";
+    //$output .= htmlentities(trim($tmp)) . "\n";
+    $log  .= "\$ $command \n".trim($tmp)."\n";
 }
 
 $log .= "\n";
 
-file_put_contents ('deploy-log.txt',$log,FILE_APPEND);
+file_put_contents ('deploy-log.txt', $log, FILE_APPEND );
 
-echo $output; 
-
+//echo $output; 
 ?>
 </pre>
 </body>
