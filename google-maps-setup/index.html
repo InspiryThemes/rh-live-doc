@@ -36,7 +36,7 @@
     
     
       
-        <title>Google Maps API Key - Real Homes Documentation</title>
+        <title>Setup - Real Homes Documentation</title>
       
     
     
@@ -107,7 +107,7 @@
                 Real Homes Documentation
               </span>
               <span class="md-header-nav__topic">
-                Google Maps API Key
+                Setup
               </span>
             
           
@@ -324,10 +324,22 @@
       
     
     
-    <a href="./" title="Google Maps API Key" class="md-nav__link md-nav__link--active">
-      Google Maps API Key
+    <a href="./" title="Setup" class="md-nav__link md-nav__link--active">
+      Setup
     </a>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../google-maps-troubleshooting/" title="Troubleshooting" class="md-nav__link">
+      Troubleshooting
+    </a>
   </li>
 
         
@@ -1851,15 +1863,27 @@
 </blockquote>
 <ol>
 <li>
-<p>Please go to <a href="https://cloud.google.com/maps-platform/#get-started"><strong>Google API Console</strong></a>. and login with your google account.</p>
+<p>Please go to <a href="https://cloud.google.com/maps-platform/#get-started"><strong>Google API Console</strong></a>. and login with your google account. Once logged in it will display a popup so pick Maps from it.
+<img alt="Google Maps Setup" src="../images/google-maps/pick-maps-popup.png" /></p>
 </li>
 <li>
 <p>Create a new project or select an existing project then click on <strong>Continue</strong> to enable the <strong>API</strong> and any related services.
 <img alt="Real Homes Documentation" src="../images/google-maps/create-or-existing.png" /></p>
 </li>
 <li>
-<p>Name your browser key and restrict it by adding your site URLs as shown in the screenshot below. 
-<img alt="Real Homes Documentation" src="../images/google-maps/credentials.png" /></p>
+<p>On the next step you have to create a billing profile.</p>
+</li>
+<li>
+<p>After creating the billing profile navigate to the Console and click on APIs from the right navigation.
+<img alt="Real Homes Documentation" src="../images/google-maps/google-maps-apis.png" /></p>
+</li>
+<li>
+<p>On this new page, click on <strong>Geocoding API</strong> and <strong>Enable</strong> it for your project. This is also needed to make the <strong>Find Address</strong> field work properly on <strong>Property Edit Page</strong>. 
+<img alt="Real Homes Documentation" src="../images/google-maps/enable-geocoding-api.gif" /></p>
+</li>
+<li>
+<p>After activating <strong>Geocoding API</strong> click on the <strong>Navigation Menu</strong> and select <strong>APIs &amp; Services</strong> and click on <strong>Credentials</strong>. In this section, you will see the name of your <strong>API Key</strong> (so click on it) and restrict it by adding your site URLs as shown in the screencast below.
+<img alt="Real Homes Documentation" src="../images/google-maps/apis-and-services-http-referrers.gif" /></p>
 </li>
 <li>
 <p>Copy the generated <strong>Google Maps API key</strong> from the popup. Click on <strong>Close</strong> button to proceed after you copied the <strong>API Key</strong>. 
@@ -1868,10 +1892,6 @@
 <li>
 <p>Put this <strong>API Key</strong> you just copied in <strong>Customizer</strong> Settings (<strong>Dashboard → Real Homes → Customize Settings → Maps → Google Maps API Key</strong>). 
 <img alt="Real Homes Documentation" src="../images/google-maps/google-maps-api-key-section-in-customizer.png" /></p>
-</li>
-<li>
-<p>By default most of the APIs are enabled but you have to enable other APIs in order to make the <strong>Find Address</strong> field work on <strong>Property Edit Page</strong>. 
-<img alt="Real Homes Documentation" src="../images/google-maps/all-apis.png" /></p>
 </li>
 </ol>
 <p><strong>Verify Domain with Google</strong>: <a href="https://support.google.com/webmasters/answer/35179">https://support.google.com/webmasters/answer/35179</a></p>
@@ -1910,13 +1930,13 @@
           </a>
         
         
-          <a href="../property-type-custom-markers/" title="Custom Markers for Property Type" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../google-maps-troubleshooting/" title="Troubleshooting" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Custom Markers for Property Type
+                Troubleshooting
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
