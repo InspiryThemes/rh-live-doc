@@ -2198,8 +2198,13 @@
 <p>On this new page, click on <strong>Maps Javascript API</strong> and <strong>Enable</strong> it. Now go back to the <strong>APIs</strong> page and click on <strong>Geocoding API</strong> and <strong>Enable</strong> it as well. This is also needed to make the <strong>Find Address</strong> field work properly on <strong>Property Edit Page</strong>. 
 <img alt="Real Homes Documentation" src="../images/google-maps/enable-geocoding-api.gif" /></p>
 <h3 id="restrict-the-api-key-to-your-domain-only"><strong>Restrict the API Key to your Domain Only</strong></h3>
-<p>After activating both <strong>APIs</strong> in the previous step now click on the <strong>Navigation Menu</strong> and select <strong>APIs &amp; Services</strong> and click on <strong>Credentials</strong>. In this section, you will see the name of your <strong>API Key</strong> (so click on it) and restrict it by adding your site URLs (in 3 formats) as shown in the screencast below.
+<p>After activating both <strong>APIs</strong> in the previous step now click on the <strong>Navigation Menu</strong> and select <strong>APIs &amp; Services</strong> and click on <strong>Credentials</strong>.</p>
+<p>In this section, you will see the name of your <strong>API Key</strong> (so click on it) and restrict it by adding your site URLs (in 3 formats: yourdomain.com, <em>.yourdomain.com and *.yourdomain.com/</em>) as shown in the screencast below.
 <img alt="Real Homes Documentation" src="../images/google-maps/apis-and-services-http-referrers.gif" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>If you don't restrict the Google Maps API Key then anyone can use it on his website because the API Key is exposed in the code. So, you must restrict the API Key to your domain only.</p>
+</div>
 <h3 id="copy-the-api-key-and-add-it"><strong>Copy the API Key and Add it</strong></h3>
 <p>Copy the generated <strong>Google Maps API key</strong> from the popup. Click on <strong>Close</strong> button to proceed after you copied the <strong>API Key</strong>. 
 <img alt="Real Homes Documentation" src="../images/google-maps/api-key.png" /></p>
