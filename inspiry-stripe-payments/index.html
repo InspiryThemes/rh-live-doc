@@ -58,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#individual-property-payments-using-stripe" class="md-skip">
+        <a href="#individual-property-payments-via-stripe" class="md-skip">
           Skip to content
         </a>
       
@@ -1270,15 +1270,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installation-setup" class="md-nav__link">
-    Installation &amp; Setup
+  <a href="#install-activate-inspiry-stripe-payments-for-realhomes-plugin" class="md-nav__link">
+    Install &amp; Activate 'Inspiry Stripe Payments for RealHomes' Plugin
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configure-related-settings" class="md-nav__link">
-    Configure related Settings
+  <a href="#configure-plugin-settings" class="md-nav__link">
+    Configure Plugin Settings
   </a>
   
 </li>
@@ -2191,15 +2191,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installation-setup" class="md-nav__link">
-    Installation &amp; Setup
+  <a href="#install-activate-inspiry-stripe-payments-for-realhomes-plugin" class="md-nav__link">
+    Install &amp; Activate 'Inspiry Stripe Payments for RealHomes' Plugin
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configure-related-settings" class="md-nav__link">
-    Configure related Settings
+  <a href="#configure-plugin-settings" class="md-nav__link">
+    Configure Plugin Settings
   </a>
   
 </li>
@@ -2220,36 +2220,43 @@
                   
                 
                 
-                <h1 id="individual-property-payments-using-stripe">Individual Property Payments Using Stripe</h1>
-<h3 id="installation-setup">Installation &amp; Setup</h3>
-<p>You have to install <a href="https://wordpress.org/plugins/inspiry-stripe-payments/">Inspiry Stripe Payments</a> plugin to accept payments for individual properties using <strong>Stripe</strong>.</p>
+                <h1 id="individual-property-payments-via-stripe">Individual Property Payments Via Stripe</h1>
+<p>To enable Stripe payments for the individual properties you would need to install and configure the <a href="https://wordpress.org/plugins/inspiry-stripe-payments/">Inspiry Stripe Payments for RealHomes</a> plugin. Plesae follow the steps given blow.</p>
+<div class="admonition important">
+<p class="admonition-title">Prerequisite</p>
+<p>Before you start following the Stripe payments setup guide, please make sure the <strong>RealHomes theme</strong> and its <strong>Easy Real Estate plugin</strong> are installed and activated on your site.</p>
+</div>
+<h2 id="install-activate-inspiry-stripe-payments-for-realhomes-plugin">Install &amp; Activate 'Inspiry Stripe Payments for RealHomes' Plugin</h2>
 <ol>
 <li>
 <p>Navigate to <strong>Dashboard → Plugins → Add New</strong> and search for <strong>Inspiry Stripe Payments</strong> as displayed in the screenshot below: </p>
-<p><img alt="Inspiry Stripe Payments Plugin Install" src="../images/other-features/inspiry-stripe-payments.png" /></p>
+<p><img alt="Install Inspiry Stripe Payments Plugin" src="../images/other-features/search-inspiry-stripe-payments.png" /></p>
 </li>
 <li>
 <p>Once found, <strong>Install</strong> and <strong>Activate</strong>  the plugin.</p>
 </li>
 </ol>
-<h2 id="configure-related-settings">Configure related Settings</h2>
+<h2 id="configure-plugin-settings">Configure Plugin Settings</h2>
 <ol>
 <li>
-<p>Go to <a href="https://dashboard.stripe.com/test/dashboard">https://dashboard.stripe.com/test/dashboard</a> and sign up or log in for your account.</p>
+<p>Navigate to <strong>Dashboard → Easy Real Estate → Stripe Settings</strong> page. This page contains the following settings.</p>
+<ul>
+<li>Enable/Disable Stripe Payments.</li>
+<li>Stripe Account API Keys.</li>
+<li>Currency Code (in which you want to charge your users).</li>
+<li>Payment Amount Per Property.</li>
+<li>Payment Button Label.</li>
+<li>Publish Submited Property after Payment.</li>
+</ul>
+</li>
+</ol>
+<p><img alt="Stripe Settings" src="../images/other-features/inspiry-stripe-payments-settings.png" /></p>
+<ol>
+<li>
+<p>Configure all the settings as per your preferences. For help to get your Stripe account <strong>Publishable Key</strong> and <strong>Secret Key</strong> you can follow <a href="https://inspirythemes.com/realhomes-memberships-setup/#retrieving-stripe-api-keys">Retrieving the API Keys</a> section.</p>
 </li>
 <li>
-<p>Click on <strong>Developer &rarr; API Keys</strong> and you will see your API Keys there.</p>
-<p><img alt="Inspiry Stripe API Keys" src="../images/other-features/stripe-api-keys.png" /></p>
-</li>
-<li>
-<p>Navigate to <strong>Dashboard → Settings → Inspiry Stripe Payments</strong> and you can use your API Keys you have found in the last step.</p>
-<p><img alt="Inspiry Stripe Payments Settings" src="../images/other-features/inspiry-stripe-payments-settings.png" /></p>
-</li>
-<li>
-<p>Configure the settings as per your requirements and <strong>Save Options</strong>.</p>
-</li>
-<li>
-<p>Once done, You can visit my properties page on your website to view Stripe payment button for individual properties.</p>
+<p>Once done, visit <em>My Properties</em> page on your website to view Stripe payment button for individual properties.</p>
 <p><img alt="My Properties Payment Buttons" src="../images/other-features/my-properties-payment-buttons.png" /></p>
 </li>
 </ol>
