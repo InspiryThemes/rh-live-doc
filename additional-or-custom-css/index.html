@@ -13,7 +13,7 @@
     
     
       
-        <title>Custom Meta Fields for Property - RealHomes Documentation</title>
+        <title>Additional or Custom CSS - RealHomes Documentation</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#create-custom-meta-fields-for-property" class="md-skip">
+        <a href="#additional-or-custom-css" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Custom Meta Fields for Property
+              Additional or Custom CSS
             
           </span>
         </div>
@@ -2000,7 +2000,7 @@
   
     <li class="md-nav__item">
       <a href="../realhomes-memberships-setup/" class="md-nav__link">
-        Membships Setup
+        Memberships Setup
       </a>
     </li>
   
@@ -2939,6 +2939,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../preset-color-schemes/" class="md-nav__link">
+        Preset Color Schemes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -2950,9 +2964,61 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Additional or Custom CSS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
-        Custom Meta Fields for Property
+        Additional or Custom CSS
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#additional-css" class="md-nav__link">
+    Additional CSS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-css-in-child-theme" class="md-nav__link">
+    Custom CSS in Child Theme
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-css-in-parent-theme" class="md-nav__link">
+    Custom CSS in Parent Theme
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-child-theme-for-customization-highly-recommended" class="md-nav__link">
+    Use Child Theme for Customization ( Highly Recommended )
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -3047,6 +3113,42 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#additional-css" class="md-nav__link">
+    Additional CSS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-css-in-child-theme" class="md-nav__link">
+    Custom CSS in Child Theme
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-css-in-parent-theme" class="md-nav__link">
+    Custom CSS in Parent Theme
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-child-theme-for-customization-highly-recommended" class="md-nav__link">
+    Use Child Theme for Customization ( Highly Recommended )
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3058,10 +3160,29 @@
               
                 
 
-<h1 id="create-custom-meta-fields-for-property">Create Custom Meta Fields for Property</h1>
-<p>Property custom post type provides various meta fields by default like price, beds, baths etc. </p>
-<p>Since version 3.0.2, New meta fields can be added and displayed using child theme. </p>
-<p>To create custom meta fields for your properties, please read this Knowledgebase Article <a href="https://support.inspirythemes.com/knowledgebase/how-to-add-property-custom-meta-fields/">How to add property custom meta fields</a>.</p>
+<h1 id="additional-or-custom-css">Additional or Custom CSS</h1>
+<h2 id="additional-css">Additional CSS</h2>
+<p><strong>Additional CSS</strong> - Go to <strong>Dashboard → Real Homes → Customize Settings</strong> and click on <strong>Additional CSS</strong> to add any CSS code. </p>
+<p><img alt="RealHomes Documentation" src="../images/customize-theme/customize-4.png" /></p>
+<h2 id="custom-css-in-child-theme">Custom CSS in Child Theme</h2>
+<p>The <code>realhomes-child/css/child-custom.css</code> file is provided in the child theme to add significant CSS changes.</p>
+<p><img alt="RealHomes Documentation" src="../images/customize-theme/custom-css-child.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is highly recommended to use a child theme for any changes you want to make, as this way, you can update the parent theme whenever an update becomes available. Copy a template file you want to change to a child theme after creating the same directory structure and then modify it. For more info <a href="http://codex.wordpress.org/Child_Themes">http://codex.wordpress.org/Child_Themes</a>.</p>
+</div>
+<h2 id="custom-css-in-parent-theme">Custom CSS in Parent Theme</h2>
+<p>If you are not using the child theme, you can use the <strong>custom.css</strong> file of the parent theme for <strong>Classic</strong> and <strong>Modern</strong> design variations separately.</p>
+<p>If you are using the <em>Classic</em> design, the <strong>custom.css</strong> file path would be <code>realhomes/assets/classic/css/custom.css</code> </p>
+<p><img alt="RealHomes Documentation" src="../images/customize-theme/custom-css-classic.png" /></p>
+<p>And if you are using the <strong>Modern</strong> design,the <strong>custom.css</strong> file path would be <code>realhomes/assets/modern/css/custom.css</code></p>
+<p><img alt="RealHomes Documentation" src="../images/customize-theme/custom-css-modern.png" /></p>
+<h2 id="use-child-theme-for-customization-highly-recommended">Use Child Theme for Customization ( Highly Recommended )</h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>To quickly update the parent theme whenever a new update becomes available, it is highly recommended to use a child theme for any customization you want to make.</p>
+<p>A pre-built ready-to-use child theme is included in the main theme pack that you have downloaded from ThemeForest.</p>
+</div>
 
               
             </article>
@@ -3076,7 +3197,7 @@
 	  <div class="md-footer-nav">
 		<nav class="md-footer-nav__inner md-grid" aria-label="Footer">
 		  
-			<a href="../customize-styles/" title="Customize Styles" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+			<a href="../preset-color-schemes/" title="Preset Color Schemes" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
 			  <div class="md-footer-nav__button md-icon">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
 			  </div>
@@ -3085,7 +3206,7 @@
 				  <span class="md-footer-nav__direction">
 					Previous
 				  </span>
-				  Customize Styles
+				  Preset Color Schemes
 				</div>
 			  </div>
 			</a>
