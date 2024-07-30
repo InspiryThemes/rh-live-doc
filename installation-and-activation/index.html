@@ -50,7 +50,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -127,6 +136,8 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -691,20 +702,6 @@
 
             
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../bookings.md" class="md-nav__link">
-        Bookings Module
-      </a>
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
@@ -1263,9 +1260,35 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_4">
+          Home Settings
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Home Settings" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_4">
+          <span class="md-nav__icon md-icon"></span>
+          Home Settings
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
       <a href="../homepage-settings-classic/" class="md-nav__link">
-        Settings (Classic)
+        Classic
       </a>
     </li>
   
@@ -1279,8 +1302,15 @@
   
     <li class="md-nav__item">
       <a href="../homepage-settings-modern/" class="md-nav__link">
-        Settings (Modern)
+        Modern
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1749,6 +1779,48 @@
   
   
     <li class="md-nav__item">
+      <a href="../property/" class="md-nav__link">
+        Property
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user-roles-synchronization/" class="md-nav__link">
+        User Roles and Synchronization
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user-approvals-management/" class="md-nav__link">
+        User Approvals Management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../social-links/" class="md-nav__link">
         Social Links
       </a>
@@ -1822,14 +1894,14 @@
       
       
         <label class="md-nav__link" for="__nav_9">
-          Property Listing Pages
+          Property Listing & Archive Pages
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Property Listing Pages" data-md-level="1">
+      <nav class="md-nav" aria-label="Property Listing & Archive Pages" data-md-level="1">
         <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
-          Property Listing Pages
+          Property Listing & Archive Pages
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1855,6 +1927,34 @@
     <li class="md-nav__item">
       <a href="../grid-variations-card-settings/" class="md-nav__link">
         Grid Variations & Card Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../archive-taxonomy-pages/" class="md-nav__link">
+        Listing & Archive Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../realhomes-misc-settings/" class="md-nav__link">
+        RealHomes Misc Settings
       </a>
     </li>
   
@@ -4154,43 +4254,43 @@
 <p>Before installation, ensure your hosting environment/server meets <a href="https://wordpress.org/about/requirements/">requirements of WordPress</a>. RealHomes doesn't demand any specific setup; it operates seamlessly on hosting accounts—be it shared, reseller, or dedicated—as long as they fulfill WordPress requirements.</p>
 <p>To begin, you'll need a functional version of a stand-alone WordPress. Most leading web hosts offer one-click WordPress installations. Refer to your host's help site for detailed instructions. For manual installation, consult the <a href="https://wordpress.org/support/article/how-to-install-wordpress/">WordPress Official Installation guide</a>.</p>
 <p>Once WordPress is set up, download "<strong>All Files and Documentation</strong>" from the ThemeForest download page and extract the zip file. This will provide you with the necessary files, including <strong>realhomes.zip</strong>.</p>
-<p><img alt="Screenshot" src="../images/installation/download-rh-full-package.png" /></p>
+<p><a class="glightbox" href="../images/installation/download-rh-full-package.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/installation/download-rh-full-package.png" /></a></p>
 <h3 id="install-theme-via-wordpress-dashboard-recommended"><strong>Install Theme Via WordPress Dashboard ( <em>Recommended</em> )</strong></h3>
 <h4 id="upload-realhomeszip-activate"><strong>Upload realhomes.zip &amp; Activate</strong></h4>
 <p>Go to <strong>Appearance → Themes</strong> section and click <strong>Add New</strong>
-<img alt="Screenshot" src="../images/installation/add-new.png" /></p>
+<a class="glightbox" href="../images/installation/add-new.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/installation/add-new.png" /></a></p>
 <p>Click <strong>Upload Theme</strong>
-<img alt="Screenshot" src="../images/installation/upload-theme.png" /></p>
+<a class="glightbox" href="../images/installation/upload-theme.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/installation/upload-theme.png" /></a></p>
 <p>Choose the <strong>realhomes.zip</strong> file and press <strong>Install Now</strong>
-<img alt="Screenshot" src="../images/installation/realhomes-zip.png" /></p>
+<a class="glightbox" href="../images/installation/realhomes-zip.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/installation/realhomes-zip.png" /></a></p>
 <p>Once the theme is uploaded, then you need to activate it.</p>
-<p><img alt="Screenshot" src="../images/installation/activate-theme.png" /></p>
+<p><a class="glightbox" href="../images/installation/activate-theme.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/installation/activate-theme.png" /></a></p>
 <h4 id="select-design-variation"><strong>Select Design Variation</strong></h4>
 <p>After theme activation, you will be redirected to the RealHomes welcome page. Here you select your desired design variation and click the <strong>Save Changes</strong> button. 
-<img alt="Screenshot" src="../images/installation/welcome-page.png" />
+<a class="glightbox" href="../images/installation/welcome-page.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/installation/welcome-page.png" /></a>
 For more details please check <a href="../design-selection/">Design Selection</a> page.</p>
 <h4 id="activate-your-license"><strong>Activate Your License</strong></h4>
 <ul>
 <li>Also, a notice will be displayed at the top of the welcome page asking you to <strong>Enter Item Purchase Code</strong> and then click on the <strong>Verify</strong> button. RealHomes purchase verification allows you to <strong>install plugins, import demo contents</strong>, and avail <strong>auto-updates</strong>. For help to retrieve RealHomes purchase code, you can follow our knowledge base article on <a href="https://support.inspirythemes.com/knowledgebase/how-to-get-themeforest-item-purchase-code/">How to Get Themeforest Item Purchase Code</a> 
-<img alt="Screenshot" src="../images/installation/purchase-verification.png" /></li>
+<a class="glightbox" href="../images/installation/purchase-verification.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/installation/purchase-verification.png" /></a></li>
 </ul>
 <h4 id="required-plugin-installation-activation"><strong>Required Plugin Installation &amp; Activation</strong></h4>
 <ul>
 <li>After <strong>RealHomes Purchase Verification</strong>, a notice will be displayed at the top asking you to install and activate the required plugins. So, go ahead and click on <strong>Begin installing plugins</strong>.<br>
-<img alt="Screenshot" src="../images/installation/begin-plugin-installation.png" /></li>
+<a class="glightbox" href="../images/installation/begin-plugin-installation.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/installation/begin-plugin-installation.png" /></a></li>
 <li>On the next page, you will see the list of plugins to install. Please select all the plugins and click on <strong>Install</strong> and then click on <strong>Apply</strong> to install all of them at once (as shown in the screenshot below). </br>
-<img alt="Screenshot" src="../images/installation/install-plugins.png" /></li>
+<a class="glightbox" href="../images/installation/install-plugins.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/installation/install-plugins.png" /></a></li>
 <li>After all the plugins are installed, click on <strong>Return</strong> to <strong>Required Plugins Installer</strong>. <br>
-<img alt="Screenshot" src="../images/installation/return-to-install.png" /></li>
+<a class="glightbox" href="../images/installation/return-to-install.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/installation/return-to-install.png" /></a></li>
 <li>Once again, select all the plugins and click on <strong>Activate</strong> and then click on <strong>Apply</strong> to activate all the plugins and you are done. <br>
-<img alt="Screenshot" src="../images/installation/activate-plugins.png" /></li>
+<a class="glightbox" href="../images/installation/activate-plugins.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/installation/activate-plugins.png" /></a></li>
 </ul>
 <h4 id="update-permalinks-settings"><strong>Update Permalinks Settings</strong></h4>
 <p>Go to <strong>Dashboard → Settings → Permalinks</strong> and choose <strong>Post name</strong> from <strong>Common Settings</strong> and save the changes, As displayed in the screenshot below.</p>
-<p><img alt="Screenshot" src="../images/import-demo/permalinks.png" /></p>
+<p><a class="glightbox" href="../images/import-demo/permalinks.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/import-demo/permalinks.png" /></a></p>
 <h4 id="initial-elementor-settings"><strong>Initial Elementor Settings</strong></h4>
 <p>Navigate to <strong>Dashboard → Elementor → Settings</strong> and make sure <strong>Disable Default Colors</strong> and <strong>Disable Default Fonts</strong> are enabled.</p>
-<p><img alt="Screenshot" src="../images/elementor/disable-default-colors-fonts-elementor.png" /></p>
+<p><a class="glightbox" href="../images/elementor/disable-default-colors-fonts-elementor.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/elementor/disable-default-colors-fonts-elementor.png" /></a></p>
 <p>If you face any problem during upload through the dashboard, please upload the theme using FTP as guided below.</p>
 <h3 id="alternative-installation-method"><strong>Alternative Installation Method</strong></h3>
 <h4 id="install-theme-via-ftp"><strong>Install Theme Via FTP</strong></h4>
@@ -4313,11 +4413,13 @@ For more details please check <a href="../design-selection/">Design Selection</a
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.d6c3db9e.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

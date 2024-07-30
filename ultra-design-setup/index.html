@@ -50,7 +50,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -127,6 +136,8 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -599,20 +610,6 @@
     <li class="md-nav__item">
       <a href="../realhomes-property-booking-payment-setup/" class="md-nav__link">
         Booking Payments
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../bookings.md" class="md-nav__link">
-        Bookings Module
       </a>
     </li>
   
@@ -1177,9 +1174,35 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_4">
+          Home Settings
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Home Settings" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_4">
+          <span class="md-nav__icon md-icon"></span>
+          Home Settings
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
       <a href="../homepage-settings-classic/" class="md-nav__link">
-        Settings (Classic)
+        Classic
       </a>
     </li>
   
@@ -1193,8 +1216,15 @@
   
     <li class="md-nav__item">
       <a href="../homepage-settings-modern/" class="md-nav__link">
-        Settings (Modern)
+        Modern
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1663,6 +1693,48 @@
   
   
     <li class="md-nav__item">
+      <a href="../property/" class="md-nav__link">
+        Property
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user-roles-synchronization/" class="md-nav__link">
+        User Roles and Synchronization
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user-approvals-management/" class="md-nav__link">
+        User Approvals Management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../social-links/" class="md-nav__link">
         Social Links
       </a>
@@ -1736,14 +1808,14 @@
       
       
         <label class="md-nav__link" for="__nav_9">
-          Property Listing Pages
+          Property Listing & Archive Pages
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Property Listing Pages" data-md-level="1">
+      <nav class="md-nav" aria-label="Property Listing & Archive Pages" data-md-level="1">
         <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
-          Property Listing Pages
+          Property Listing & Archive Pages
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1769,6 +1841,34 @@
     <li class="md-nav__item">
       <a href="../grid-variations-card-settings/" class="md-nav__link">
         Grid Variations & Card Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../archive-taxonomy-pages/" class="md-nav__link">
+        Listing & Archive Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../realhomes-misc-settings/" class="md-nav__link">
+        RealHomes Misc Settings
       </a>
     </li>
   
@@ -3988,17 +4088,17 @@
 </div>
 <h3 id="import-ultra-design-demo-data"><strong>Import Ultra Design Demo Data</strong></h3>
 <p>Now you can import the <strong>Ultra Design Demo Contents</strong>. Go to <strong>RealHomes → Demo Import</strong> to import demo data.</p>
-<p><img alt="Screenshot" src="../images/import-demo/import-demo-data.png" /></p>
+<p><a class="glightbox" href="../images/import-demo/import-demo-data.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/import-demo/import-demo-data.png" /></a></p>
 <p>Click on blue <strong>Import Demo</strong> button of <strong>Ultra - Elementor</strong> and you will see the next page where it will confirm the required plugins are installed including the Ultra Design plugin.</p>
 <p>If any plugin is missing then the Demo Import process will install it so click on <strong>Continue &amp; Import</strong> button again to confirm the import.</p>
 <p>Wait for few minutes as the demo images are being fetched (downloaded) from the remote server to your website, and this process can take a couple of minutes (depending on the speed of your hosting server).</p>
-<p><img alt="Screenshot" src="../images/ultra/ultra-demo-import.png" /></p>
+<p><a class="glightbox" href="../images/ultra/ultra-demo-import.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/ultra/ultra-demo-import.png" /></a></p>
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
 <p>Sometimes, the import process takes longer than expected and doesn't complete in the first attempt. So, simply import again until the process is complete.</p>
 </div>
 <p><strong>Once the import process is complete</strong>, You will receive a notice as the one displayed in the screenshot below.</p>
-<p><img alt="Screenshot" src="../images/import-demo/all-done.png" /></p>
+<p><a class="glightbox" href="../images/import-demo/all-done.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/import-demo/all-done.png" /></a></p>
 <p>Visit your site and you will find your site working like the theme demo.</p>
 <p>For any assistance, Kindly register/login at our <a href="https://support.inspirythemes.com/login-register/">support website</a> and <a href="https://support.inspirythemes.com/ask-question/">ask your question</a> over there. So that our support team can assist you properly.</p>
 
@@ -4090,11 +4190,13 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.d6c3db9e.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

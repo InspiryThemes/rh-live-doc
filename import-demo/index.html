@@ -50,7 +50,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -127,6 +136,8 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -698,20 +709,6 @@
 
             
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../bookings.md" class="md-nav__link">
-        Bookings Module
-      </a>
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
@@ -1270,9 +1267,35 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_4">
+          Home Settings
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Home Settings" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_4">
+          <span class="md-nav__icon md-icon"></span>
+          Home Settings
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
       <a href="../homepage-settings-classic/" class="md-nav__link">
-        Settings (Classic)
+        Classic
       </a>
     </li>
   
@@ -1286,8 +1309,15 @@
   
     <li class="md-nav__item">
       <a href="../homepage-settings-modern/" class="md-nav__link">
-        Settings (Modern)
+        Modern
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1756,6 +1786,48 @@
   
   
     <li class="md-nav__item">
+      <a href="../property/" class="md-nav__link">
+        Property
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user-roles-synchronization/" class="md-nav__link">
+        User Roles and Synchronization
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user-approvals-management/" class="md-nav__link">
+        User Approvals Management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../social-links/" class="md-nav__link">
         Social Links
       </a>
@@ -1829,14 +1901,14 @@
       
       
         <label class="md-nav__link" for="__nav_9">
-          Property Listing Pages
+          Property Listing & Archive Pages
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Property Listing Pages" data-md-level="1">
+      <nav class="md-nav" aria-label="Property Listing & Archive Pages" data-md-level="1">
         <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
-          Property Listing Pages
+          Property Listing & Archive Pages
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1862,6 +1934,34 @@
     <li class="md-nav__item">
       <a href="../grid-variations-card-settings/" class="md-nav__link">
         Grid Variations & Card Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../archive-taxonomy-pages/" class="md-nav__link">
+        Listing & Archive Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../realhomes-misc-settings/" class="md-nav__link">
+        RealHomes Misc Settings
       </a>
     </li>
   
@@ -4173,18 +4273,18 @@
 <h2 id="one-click-demo-import-automatic-recommended">One Click Demo Import ( Automatic &amp; Recommended )</h2>
 <h3 id="step-1"><strong>Step 1</strong></h3>
 <p>Go to <strong>Dashboard → Settings → Permalinks</strong> and choose <strong>Post name</strong> from <strong>Common Settings</strong> and save the changes, As displayed in the screenshot below.</p>
-<p><img alt="Screenshot" src="../images/import-demo/permalinks.png" /></p>
+<p><a class="glightbox" href="../images/import-demo/permalinks.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/import-demo/permalinks.png" /></a></p>
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
 <p>It is crucial to complete <strong>Step 1</strong> as the import script is programmed to work with pretty permalinks. Otherwise, you will have configuration issues after importing demo data.</p>
 </div>
 <h3 id="step-2"><strong>Step 2</strong></h3>
 <p>Go to <strong>RealHomes → Demo Import</strong> to import demo data. There are several demos available to import.</p>
-<p><img alt="Screenshot" src="../images/import-demo/import-demo-demonstration.gif" /></p>
+<p><a class="glightbox" href="../images/import-demo/import-demo-demonstration.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/import-demo/import-demo-demonstration.gif" /></a></p>
 <p>Move the pointer to the demo, and you will have two buttons, "<strong>Preview Demo</strong>" and "<strong>Import Demo</strong>." Click on the <strong>Import Demo</strong> button to import your desired demo.</p>
-<p><img alt="Import Demo" src="../images/import-demo/import-demo-btn.jpg" /></p>
+<p><a class="glightbox" href="../images/import-demo/import-demo-btn.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Import Demo" src="../images/import-demo/import-demo-btn.jpg" /></a></p>
 <p>The Demo Import process will install any missing plugins (if any), so click on the <strong>Continue &amp; Import</strong> button to confirm the operation.</p>
-<p><img alt="Continue &amp; Import" src="../images/import-demo/continue-and-import.jpg" /></p>
+<p><a class="glightbox" href="../images/import-demo/continue-and-import.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Continue &amp; Import" src="../images/import-demo/continue-and-import.jpg" /></a></p>
 <p>Wait for few minutes while the demo content and images are downloaded. This process can take a couple of minutes (depending on the speed of your hosting server).</p>
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
@@ -4192,45 +4292,45 @@
 </div>
 <h3 id="step-3"><strong>Step 3</strong></h3>
 <p>Once the import process is complete, You will see a notice that the import is complete.</p>
-<p><img alt="Screenshot" src="../images/import-demo/all-done.png" /></p>
+<p><a class="glightbox" href="../images/import-demo/all-done.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/import-demo/all-done.png" /></a></p>
 <p>You can click on <strong>Visit Site</strong> to see your website after importing the demo content. In case of any problem, Get in touch with our support team using our support site.</p>
 <h2 id="import-xml-contents-and-configure-settings-manually">Import XML Contents and Configure Settings Manually</h2>
 <h3 id="step-1_1"><strong>Step 1</strong></h3>
 <p>Go to <strong>Dashboard → Settings → Permalinks</strong> and choose Post name from Common Settings and save the changes, As displayed in the screenshot below.</p>
-<p><img alt="Screenshot" src="../images/import-demo/permalinks.png" /></p>
+<p><a class="glightbox" href="../images/import-demo/permalinks.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/import-demo/permalinks.png" /></a></p>
 <h3 id="step-2_1"><strong>Step 2</strong></h3>
 <p>Go to <strong>Dashboard → Tools → Import</strong> and click Install Now shown under WordPress as displayed in the image below.</p>
-<p><img alt="Screenshot" src="../images/import-demo/install-wordpress-importer.png" /></p>
+<p><a class="glightbox" href="../images/import-demo/install-wordpress-importer.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/import-demo/install-wordpress-importer.png" /></a></p>
 <p>Once installed, you can activate the plugin and run it by clicking on Run Importer.</p>
-<p><img alt="Screenshot" src="../images/import-demo/run-wordpress-importer.png" /></p>
+<p><a class="glightbox" href="../images/import-demo/run-wordpress-importer.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/import-demo/run-wordpress-importer.png" /></a></p>
 <h3 id="step-3_1"><strong>Step 3</strong></h3>
 <p>Look for the Import XML folder in the unzipped package downloaded from ThemeForest, called <strong>rh-main-package.zip</strong> and use the XML file of the variation of your choice, i.e., Classic or Modern, within it.</p>
-<p><img alt="Screenshot" src="../images/import-demo/xml-file-selection.png" /></p>
-<p><img alt="Screenshot" src="../images/import-demo/upload-and-import.png" /></p>
+<p><a class="glightbox" href="../images/import-demo/xml-file-selection.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/import-demo/xml-file-selection.png" /></a></p>
+<p><a class="glightbox" href="../images/import-demo/upload-and-import.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/import-demo/upload-and-import.png" /></a></p>
 <ol>
 <li>Assign posts to an existing author.</li>
 <li>Mark the checkbox to download and import file attachments</li>
 <li>Click the '<strong>Submit</strong>' button</li>
 </ol>
-<p><img alt="Screenshot" src="../images/import-demo/assign-post.png" /></p>
+<p><a class="glightbox" href="../images/import-demo/assign-post.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/import-demo/assign-post.png" /></a></p>
 <p>The import process can take from 2 minutes to 10 minutes, depending on the speed of your hosting server. So please wait for it and try to keep the focus on the current tab in your browser.</p>
 <p>After it is completed, you will have various posts, pages, properties, and other content on the theme demo.</p>
-<p><img alt="Screenshot" src="../images/import-demo/importer-all-done.png" /></p>
+<p><a class="glightbox" href="../images/import-demo/importer-all-done.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/import-demo/importer-all-done.png" /></a></p>
 <h3 id="step-4"><strong>Step 4</strong></h3>
 <p>Navigate to <strong>Dashboard → Appearance → Menus</strong>, use the Already Imported Menu from XML, and assign it to theme location "Main Menu" from the Menu Settings section below. After that, save the menu. As pointed in the screenshot below.</p>
-<p><img alt="Screenshot" src="../images/import-demo/menu-assignment.png" /></p>
+<p><a class="glightbox" href="../images/import-demo/menu-assignment.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/import-demo/menu-assignment.png" /></a></p>
 <h3 id="step-5"><strong>Step 5</strong></h3>
 <p>To configure reading settings, you need to visit <strong>Dashboard → Settings → Reading</strong> and choose that front page displays as a static page. Then select Home as FrontPage and News as Posts Page (displayed in the following screenshot).</p>
-<p><img alt="Screenshot" src="../images/import-demo/home-and-blog-settings.png" /></p>
+<p><a class="glightbox" href="../images/import-demo/home-and-blog-settings.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/import-demo/home-and-blog-settings.png" /></a></p>
 <h3 id="step-6"><strong>Step 6</strong></h3>
 <p>To import Customizer settings, you have to install <a href="https://wordpress.org/plugins/customizer-export-import/">Customizer Export/Import</a>. </p>
 <p>Once the plugin is installed and activated, navigate to <strong>Dashboard → RealHomes → Customize Settings → Export/Import</strong> and select the customizer.dat file for the relevant design variation (Classic or Modern).</p>
-<p><img alt="Screenshot" src="../images/import-demo/import-customizer-settings.png" /></p>
+<p><a class="glightbox" href="../images/import-demo/import-customizer-settings.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/import-demo/import-customizer-settings.png" /></a></p>
 <p>Upon successful import, the Customizer will be refreshed.</p>
 <h3 id="step-7"><strong>Step 7</strong></h3>
 <p>Now you can import widgets too. To do that, kindly install <a href="https://wordpress.org/plugins/widget-importer-exporter/">Widget Importer &amp; Exporter</a>. </p>
 <p>After successful installation and activation, navigate to <strong>Dashboard → Tools → Widget Importer &amp; Exporter</strong> and select the widgets.wie file for the relevant design variation (Classic or Modern).</p>
-<p><img alt="Screenshot" src="../images/import-demo/import-widget-settings.png" /></p>
+<p><a class="glightbox" href="../images/import-demo/import-widget-settings.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Screenshot" src="../images/import-demo/import-widget-settings.png" /></a></p>
 <p>Upon successful demo import, the page will reload and display the widgets which are imported.</p>
 <p>Visit your site, and you will find your site working like the theme demo.</p>
 <p>For any assistance, Kindly register/login at our <a href="https://support.inspirythemes.com/login-register/">support website</a> and <a href="https://support.inspirythemes.com/ask-question/">ask your question</a> so our support team can assist you properly.</p>
@@ -4323,11 +4423,13 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.d6c3db9e.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

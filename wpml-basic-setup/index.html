@@ -50,7 +50,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -127,6 +136,8 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -560,20 +571,6 @@
     <li class="md-nav__item">
       <a href="../realhomes-property-booking-payment-setup/" class="md-nav__link">
         Booking Payments
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../bookings.md" class="md-nav__link">
-        Bookings Module
       </a>
     </li>
   
@@ -1138,9 +1135,35 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_4">
+          Home Settings
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Home Settings" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_4">
+          <span class="md-nav__icon md-icon"></span>
+          Home Settings
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
       <a href="../homepage-settings-classic/" class="md-nav__link">
-        Settings (Classic)
+        Classic
       </a>
     </li>
   
@@ -1154,8 +1177,15 @@
   
     <li class="md-nav__item">
       <a href="../homepage-settings-modern/" class="md-nav__link">
-        Settings (Modern)
+        Modern
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1624,6 +1654,48 @@
   
   
     <li class="md-nav__item">
+      <a href="../property/" class="md-nav__link">
+        Property
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user-roles-synchronization/" class="md-nav__link">
+        User Roles and Synchronization
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user-approvals-management/" class="md-nav__link">
+        User Approvals Management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../social-links/" class="md-nav__link">
         Social Links
       </a>
@@ -1697,14 +1769,14 @@
       
       
         <label class="md-nav__link" for="__nav_9">
-          Property Listing Pages
+          Property Listing & Archive Pages
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Property Listing Pages" data-md-level="1">
+      <nav class="md-nav" aria-label="Property Listing & Archive Pages" data-md-level="1">
         <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
-          Property Listing Pages
+          Property Listing & Archive Pages
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1730,6 +1802,34 @@
     <li class="md-nav__item">
       <a href="../grid-variations-card-settings/" class="md-nav__link">
         Grid Variations & Card Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../archive-taxonomy-pages/" class="md-nav__link">
+        Listing & Archive Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../realhomes-misc-settings/" class="md-nav__link">
+        RealHomes Misc Settings
       </a>
     </li>
   
@@ -4205,46 +4305,46 @@
 <p>Please follow the steps below to configure the basic settings for the WPML Plugin.</p>
 <h2 id="installation-activation">Installation &amp; Activation</h2>
 <p>Install and activate the <strong>WPML Multilingual CMS Plugin</strong>.
-<img alt="RealHomes Documentation" src="../images/wpml/wpml-cms.png" /></p>
+<a class="glightbox" href="../images/wpml/wpml-cms.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="RealHomes Documentation" src="../images/wpml/wpml-cms.png" /></a></p>
 <h2 id="initial-setup">Initial Setup</h2>
 <p>Upon activation, you will see a notice at the top to configure WPML if this is your first time activating it. Click on <strong>Configure WPML</strong>.
-<img alt="RealHomes Documentation" src="../images/wpml/configure-wpml.png" /></p>
+<a class="glightbox" href="../images/wpml/configure-wpml.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="RealHomes Documentation" src="../images/wpml/configure-wpml.png" /></a></p>
 <h2 id="languages-setup">Languages Setup</h2>
 <p>Next, add the languages of your choice that you want to use for your website's translation.
-<img alt="RealHomes Documentation" src="../images/wpml/WPML-step-1.png" /></p>
+<a class="glightbox" href="../images/wpml/WPML-step-1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="RealHomes Documentation" src="../images/wpml/WPML-step-1.png" /></a></p>
 <h2 id="configure-sites-url">Configure Site's URL</h2>
 <p>On the next step, select "<strong>Different languages in directories</strong>" to configure the <strong>site's URL</strong> for multilingual content.
-<img alt="RealHomes Documentation" src="../images/wpml/WPML-step-2.png" /></p>
+<a class="glightbox" href="../images/wpml/WPML-step-2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="RealHomes Documentation" src="../images/wpml/WPML-step-2.png" /></a></p>
 <h2 id="verify-wpml-license">Verify WPML License</h2>
 <p>In order to verify the license of WPML and receive regular plugin updates, please add the Site Key provided by WPML.
-<img alt="RealHomes Documentation" src="../images/wpml/WPML-step-3.png" /></p>
+<a class="glightbox" href="../images/wpml/WPML-step-3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="RealHomes Documentation" src="../images/wpml/WPML-step-3.png" /></a></p>
 <h2 id="translators-settings">Translators Settings</h2>
 <p>Configure the settings about who will be translating the content. Select "Only myself" if you plan to add all the translations manually.
-<img alt="RealHomes Documentation" src="../images/wpml/WPML-step-4.png" /></p>
+<a class="glightbox" href="../images/wpml/WPML-step-4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="RealHomes Documentation" src="../images/wpml/WPML-step-4.png" /></a></p>
 <h2 id="share-usage-data-with-wpml">Share Usage Data with WPML</h2>
 <p>The next step allows you to choose whether you want to share data with WPML officials for future support and improvements.
-<img alt="RealHomes Documentation" src="../images/wpml/WPML-step-5.png" /></p>
+<a class="glightbox" href="../images/wpml/WPML-step-5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="RealHomes Documentation" src="../images/wpml/WPML-step-5.png" /></a></p>
 <h2 id="install-string-translation-plugin">Install String Translation Plugin</h2>
 <p>The 6<sup>th</sup> step in the onboarding process is crucial. Select "String Translation" to install the string translation plugin, as it enables the String Translation feature of WPML.
-<img alt="RealHomes Documentation" src="../images/wpml/WPML-step-6.png" /></p>
+<a class="glightbox" href="../images/wpml/WPML-step-6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="RealHomes Documentation" src="../images/wpml/WPML-step-6.png" /></a></p>
 <h2 id="finish-the-onboarding-process">Finish the Onboarding Process</h2>
 <p>Click "Finish" to complete the onboarding process and the initial setup of the WPML Translation plugin.
-<img alt="RealHomes Documentation" src="../images/wpml/WPML-step-7.png" /></p>
+<a class="glightbox" href="../images/wpml/WPML-step-7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="RealHomes Documentation" src="../images/wpml/WPML-step-7.png" /></a></p>
 <h2 id="make-themes-work-multilingual">Make Themes Work Multilingual</h2>
 <p>Search for <strong>Make themes work multilingual</strong> and disable this option.
-<img alt="RealHomes Documentation" src="../images/wpml/adjust-ids.gif" /></p>
+<a class="glightbox" href="../images/wpml/adjust-ids.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="RealHomes Documentation" src="../images/wpml/adjust-ids.gif" /></a></p>
 <h2 id="theme-plugin-localization">Theme &amp; Plugin Localization</h2>
 <p>Go to <strong>Dashboard → WPML → Theme and Plugin Localization</strong>. Under <strong>Localization options</strong>, choose <strong>Automatically load the theme's .mo file using 'load_textdomain'</strong>, and type <strong>framework</strong> in the <strong>Enter textdomain</strong> field below, then click <strong>Save</strong>.
-<img alt="RealHomes Documentation" src="../images/wpml/load_translation_domain_framework.gif" /></p>
+<a class="glightbox" href="../images/wpml/load_translation_domain_framework.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="RealHomes Documentation" src="../images/wpml/load_translation_domain_framework.gif" /></a></p>
 <h2 id="scan-the-theme-and-plugins">Scan the Theme and Plugins</h2>
 <p>Navigate to the <strong>Strings in the Theme</strong> section, press the <strong>Scan the theme for Strings</strong> button, and wait for the results.
-<img alt="RealHomes Documentation" src="../images/wpml/string-in-theme.png" /></p>
+<a class="glightbox" href="../images/wpml/string-in-theme.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="RealHomes Documentation" src="../images/wpml/string-in-theme.png" /></a></p>
 <h2 id="track-strings-appearance">Track Strings Appearance</h2>
 <p>Go to <strong>Dashboard → WPML → String Translation</strong> section and configure the following settings.
-<img alt="RealHomes Documentation" src="../images/wpml/track-strings.png" /></p>
+<a class="glightbox" href="../images/wpml/track-strings.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="RealHomes Documentation" src="../images/wpml/track-strings.png" /></a></p>
 <h2 id="disable-wpml-advance-side-by-side-translation-editor">Disable WPML Advance (side-by-side) Translation Editor</h2>
 <p>In <strong>Dashboard → WPML → Settings</strong>, scroll down until you find "<strong>How to translate posts and pages</strong>" and set it to <strong>Use WPML's Classic Translation Editor</strong> as shown below.
-<img alt="RealHomes Documentation" src="../images/wpml/wpml-classic-editor.png" /></p>
+<a class="glightbox" href="../images/wpml/wpml-classic-editor.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="RealHomes Documentation" src="../images/wpml/wpml-classic-editor.png" /></a></p>
 <h2 id="start-translating-the-strings">Start Translating the Strings</h2>
 <p>With the basic settings complete, you can now translate any string that does not exist in the posts, pages, and taxonomies via the <strong>Dashboard → WPML → String Translation</strong> section. For more information, consult the <a href="https://wpml.org/documentation/getting-started-guide/string-translation/">WPML String Translation Documentation</a>.</p>
 <h2 id="wpml-language-switcher-settings">WPML Language Switcher Settings</h2>
@@ -4339,11 +4439,13 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.d6c3db9e.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

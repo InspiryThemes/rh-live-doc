@@ -50,7 +50,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -127,6 +136,8 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -560,20 +571,6 @@
     <li class="md-nav__item">
       <a href="../realhomes-property-booking-payment-setup/" class="md-nav__link">
         Booking Payments
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../bookings.md" class="md-nav__link">
-        Bookings Module
       </a>
     </li>
   
@@ -1138,9 +1135,35 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_4">
+          Home Settings
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Home Settings" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_4">
+          <span class="md-nav__icon md-icon"></span>
+          Home Settings
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
       <a href="../homepage-settings-classic/" class="md-nav__link">
-        Settings (Classic)
+        Classic
       </a>
     </li>
   
@@ -1154,8 +1177,15 @@
   
     <li class="md-nav__item">
       <a href="../homepage-settings-modern/" class="md-nav__link">
-        Settings (Modern)
+        Modern
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1624,6 +1654,48 @@
   
   
     <li class="md-nav__item">
+      <a href="../property/" class="md-nav__link">
+        Property
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user-roles-synchronization/" class="md-nav__link">
+        User Roles and Synchronization
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user-approvals-management/" class="md-nav__link">
+        User Approvals Management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../social-links/" class="md-nav__link">
         Social Links
       </a>
@@ -1697,14 +1769,14 @@
       
       
         <label class="md-nav__link" for="__nav_9">
-          Property Listing Pages
+          Property Listing & Archive Pages
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Property Listing Pages" data-md-level="1">
+      <nav class="md-nav" aria-label="Property Listing & Archive Pages" data-md-level="1">
         <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
-          Property Listing Pages
+          Property Listing & Archive Pages
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1730,6 +1802,34 @@
     <li class="md-nav__item">
       <a href="../grid-variations-card-settings/" class="md-nav__link">
         Grid Variations & Card Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../archive-taxonomy-pages/" class="md-nav__link">
+        Listing & Archive Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../realhomes-misc-settings/" class="md-nav__link">
+        RealHomes Misc Settings
       </a>
     </li>
   
@@ -4185,52 +4285,52 @@
 <h1 id="submit-property">Submit Property</h1>
 <h3 id="submit-property-module"><strong>Submit Property Module</strong></h3>
 <p>You can Enable/Disable <strong>Submit Property</strong> module on dashboard by navigating to <strong>Dashboard → RealHomes → Customize Settings → Dashboard → Submit Property</strong> section.</p>
-<p><img alt="Submit Property Settings" src="../images/member-pages/submit-property-customizer-settings.png" /></p>
+<p><a class="glightbox" href="../images/member-pages/submit-property-customizer-settings.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Submit Property Settings" src="../images/member-pages/submit-property-customizer-settings.png" /></a></p>
 <p><strong>Modern</strong></p>
-<p><img alt="Submit Property" src="../images/member-pages/submit-property-front-end-mod.png" /></p>
+<p><a class="glightbox" href="../images/member-pages/submit-property-front-end-mod.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Submit Property" src="../images/member-pages/submit-property-front-end-mod.png" /></a></p>
 <p><strong>Classic</strong></p>
-<p><img alt="Submit Property" src="../images/member-pages/submit-property-front-end.png" /></p>
+<p><a class="glightbox" href="../images/member-pages/submit-property-front-end.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Submit Property" src="../images/member-pages/submit-property-front-end.png" /></a></p>
 <p>Frontend view of submit/add property module.</p>
-<p><img alt="Submit Property Settings" src="../images/dashboard/frontend-submit-property.png" /></p>
+<p><a class="glightbox" href="../images/dashboard/frontend-submit-property.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Submit Property Settings" src="../images/dashboard/frontend-submit-property.png" /></a></p>
 <h3 id="submit-property-labels"><strong>Submit Property Labels</strong></h3>
 <p>You can change the labels of each field of Submit Property form in <strong>Dashboard → RealHomes → Customize Settings → Dashboard → Submit Property Labels</strong>.</p>
-<p><img alt="Submit Property Form" src="../images/dashboard/submit-property-labels.gif" /></p>
+<p><a class="glightbox" href="../images/dashboard/submit-property-labels.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Submit Property Form" src="../images/dashboard/submit-property-labels.gif" /></a></p>
 <h3 id="submit-property-form-layout"><strong>Submit Property Form Layout</strong></h3>
-<p><img alt="Submit Property Form" src="../images/dashboard/submit-property-form-layout.png" /></p>
+<p><a class="glightbox" href="../images/dashboard/submit-property-form-layout.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Submit Property Form" src="../images/dashboard/submit-property-form-layout.png" /></a></p>
 <h3 id="submit-property-form-fields"><strong>Submit Property Form Fields</strong></h3>
-<p><img alt="Submit Property Form" src="../images/dashboard/submit-property-form-fields.png" /></p>
+<p><a class="glightbox" href="../images/dashboard/submit-property-form-fields.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Submit Property Form" src="../images/dashboard/submit-property-form-fields.png" /></a></p>
 <h3 id="select-default-agent-for-agent-area"><strong>Select Default Agent For Agent Area</strong></h3>
 <p>You can choose an agent to be automatically pre-selected on the "Submit Property" page within the "Agent &amp; Reviewer" section.</p>
-<p><img alt="Submit Property - Select Default Agent For Agent Area" src="../images/dashboard/default-agent-for-agent-area.png" /></p>
+<p><a class="glightbox" href="../images/dashboard/default-agent-for-agent-area.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Submit Property - Select Default Agent For Agent Area" src="../images/dashboard/default-agent-for-agent-area.png" /></a></p>
 <h3 id="terms-conditions"><strong>Terms &amp; Conditions</strong></h3>
 <p>You can add <strong>Terms &amp; Conditions</strong> field to submit property module. You can also select a page for <em>Terms &amp; Conditions</em>.</p>
-<p><img alt="Submit Property" src="../images/member-pages/terms-and-conditions.png" /></p>
+<p><a class="glightbox" href="../images/member-pages/terms-and-conditions.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Submit Property" src="../images/member-pages/terms-and-conditions.png" /></a></p>
 <h3 id="choose-submit-property-status-pending-or-publish"><strong>Choose Submit Property Status (Pending or Publish)</strong></h3>
 <p>You can change the status of the newly submitted property. You can either select <strong>Pending</strong> or <strong>Publish</strong>. If you will select Pending the property will not directly available for public view but if you select Publish then it will be published for everyone to see.</p>
-<p><img alt="Submit Property" src="../images/member-pages/submitted-property-status.png" /></p>
+<p><a class="glightbox" href="../images/member-pages/submitted-property-status.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Submit Property" src="../images/member-pages/submitted-property-status.png" /></a></p>
 <h3 id="choose-updated-property-status-pending-or-publish"><strong>Choose Updated Property Status (Pending or Publish)</strong></h3>
 <p>You can change the default status of updated property using this setting.</p>
-<p><img alt="Submit Property" src="../images/dashboard/updated-property-status.png" /></p>
+<p><a class="glightbox" href="../images/dashboard/updated-property-status.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Submit Property" src="../images/dashboard/updated-property-status.png" /></a></p>
 <h3 id="auto-generated-property-id"><strong>Auto-Generated Property ID</strong></h3>
 <p>You can enable/disable <strong>Auto-Generated Property ID</strong> for your properties, if you will activate the <strong>Auto-Generated Property ID</strong> then you will not be able to edit the <strong>Property ID</strong> anymore.</p>
 <p>You can also provide a pattern of your choice for the <strong>Property ID</strong> field.</p>
-<p><img alt="Submit Property" src="../images/member-pages/property-id.png" /></p>
+<p><a class="glightbox" href="../images/member-pages/property-id.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Submit Property" src="../images/member-pages/property-id.png" /></a></p>
 <h3 id="default-additional-details"><strong>Default Additional Details</strong></h3>
 <p>You can add default titles and values for additional property details using <strong>Default Additional Details</strong>.</p>
-<p><img alt="Submit Property" src="../images/member-pages/default-additional-details.png" /></p>
+<p><a class="glightbox" href="../images/member-pages/default-additional-details.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Submit Property" src="../images/member-pages/default-additional-details.png" /></a></p>
 <h3 id="notice-on-successful-property-submission"><strong>Notice on Successful Property Submission</strong></h3>
 <p>The message which is shown after successful submission of the property can also be changed in this section.</p>
-<p><img alt="Submit Property" src="../images/member-pages/message-submit-notice.png" /></p>
+<p><a class="glightbox" href="../images/member-pages/message-submit-notice.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Submit Property" src="../images/member-pages/message-submit-notice.png" /></a></p>
 <h3 id="email-for-notification-of-new-property-submissions"><strong>Email For Notification of New Property Submissions</strong></h3>
 <p>The email address where you want to get the notification of new property listing submissions are also changed here.</p>
-<p><img alt="Submit Property" src="../images/member-pages/submit-notice-email.png" /></p>
+<p><a class="glightbox" href="../images/member-pages/submit-notice-email.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Submit Property" src="../images/member-pages/submit-notice-email.png" /></a></p>
 <h3 id="redirect-users-after-successful-property-submission"><strong>Redirect Users After Successful Property Submission</strong></h3>
 <p>We have also added an option that can help you setup a page for redirection after successful property submission.</p>
-<p><img alt="Redirect Users After Successful Property Submission" src="../images/member-pages/redirect-user-after-successful-submission.png" /></p>
+<p><a class="glightbox" href="../images/member-pages/redirect-user-after-successful-submission.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Redirect Users After Successful Property Submission" src="../images/member-pages/redirect-user-after-successful-submission.png" /></a></p>
 <h3 id="default-address-map-location-in-submit-form"><strong>Default Address &amp; Map Location in Submit Form</strong></h3>
 <p>You can change the <strong>Default Address</strong> which is shown in <strong>Submit Property</strong> module from <strong>Maps</strong> Settings (<strong>Easy Real Estate → Settings → Maps</strong>). </p>
 <p>You can also modify the longitude and latitude of the default map location. Please make sure that you add the coordinates properly, adding bad coordinates will result in the issues accessing the Submit Property or Add New Property module.</p>
-<p><img alt="RealHomes Documentation" src="../images/google-maps/google-maps-ere.png" /></p>
+<p><a class="glightbox" href="../images/google-maps/google-maps-ere.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="RealHomes Documentation" src="../images/google-maps/google-maps-ere.png" /></a></p>
 <h3 id="individual-property-payments-settings"><strong>Individual Property Payments Settings</strong></h3>
 <p>If you like to charge the user/member of your website to list their properties for a cost then you can activate Individual Property Payments feature using either <a href="https://realhomes.io/documentation/realhomes-paypal-payments/"><strong>PayPal</strong></a>, <a href="https://realhomes.io/documentation/inspiry-stripe-payments/"><strong>Stripe</strong></a> and <a href="https://realhomes.io/documentation/realhomes-woocommerce-payment-setup/"><strong>WooCommerce</strong></a>.</p>
 <p>Please visit the <strong>Individual Property Payments</strong> section to learn how.</p>
@@ -4323,11 +4423,13 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.d6c3db9e.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

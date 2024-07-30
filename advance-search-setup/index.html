@@ -50,7 +50,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -127,6 +136,8 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -560,20 +571,6 @@
     <li class="md-nav__item">
       <a href="../realhomes-property-booking-payment-setup/" class="md-nav__link">
         Booking Payments
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../bookings.md" class="md-nav__link">
-        Bookings Module
       </a>
     </li>
   
@@ -1138,9 +1135,35 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_4">
+          Home Settings
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Home Settings" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_4">
+          <span class="md-nav__icon md-icon"></span>
+          Home Settings
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
       <a href="../homepage-settings-classic/" class="md-nav__link">
-        Settings (Classic)
+        Classic
       </a>
     </li>
   
@@ -1154,8 +1177,15 @@
   
     <li class="md-nav__item">
       <a href="../homepage-settings-modern/" class="md-nav__link">
-        Settings (Modern)
+        Modern
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1797,6 +1827,48 @@
   
   
     <li class="md-nav__item">
+      <a href="../property/" class="md-nav__link">
+        Property
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user-roles-synchronization/" class="md-nav__link">
+        User Roles and Synchronization
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user-approvals-management/" class="md-nav__link">
+        User Approvals Management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../social-links/" class="md-nav__link">
         Social Links
       </a>
@@ -1870,14 +1942,14 @@
       
       
         <label class="md-nav__link" for="__nav_9">
-          Property Listing Pages
+          Property Listing & Archive Pages
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Property Listing Pages" data-md-level="1">
+      <nav class="md-nav" aria-label="Property Listing & Archive Pages" data-md-level="1">
         <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
-          Property Listing Pages
+          Property Listing & Archive Pages
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1903,6 +1975,34 @@
     <li class="md-nav__item">
       <a href="../grid-variations-card-settings/" class="md-nav__link">
         Grid Variations & Card Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../archive-taxonomy-pages/" class="md-nav__link">
+        Listing & Archive Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../realhomes-misc-settings/" class="md-nav__link">
+        RealHomes Misc Settings
       </a>
     </li>
   
@@ -4253,29 +4353,29 @@
 <p>Follow the steps below to configure the search functionality.</p>
 <h3 id="select-property-search-page"><strong>Select Property Search Page</strong></h3>
 <p>Please navigate to <strong>Dashboard → RealHomes → Customize Settings</strong> and then go into <strong>Properties Search → Properties Search Page</strong> and select the property search page from <strong>Select Search Page</strong>. You can setup other options according to your requirements.</p>
-<p><img alt="Properties Search Page Settings" src="../images/home-setup/search-page-settings-full-mod.png" /></p>
+<p><a class="glightbox" href="../images/home-setup/search-page-settings-full-mod.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Properties Search Page Settings" src="../images/home-setup/search-page-settings-full-mod.png" /></a></p>
 <p>After this you will have a property search form displayed on homepage.</p>
 <p>Now, you can also use the <strong>RealHomes - Advance Search Widget</strong> in sidebar as that widget uses the same configurations.</p>
 <h3 id="search-form-layout"><strong>Search Form Layout</strong></h3>
 <p>Navigate to <strong>Search Form Basics</strong> section in <strong>Properties Search</strong> panel, In this section you can change <strong>Search Form Layout</strong> to <strong>Default</strong> or <strong>Smart</strong>. You can check both layouts in the following screenshots.</p>
-<p><img alt="Properties Search Basics" src="../images/home-setup/search-form-layout.gif" /></p>
+<p><a class="glightbox" href="../images/home-setup/search-form-layout.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Properties Search Basics" src="../images/home-setup/search-form-layout.gif" /></a></p>
 <p><strong>Default Layout</strong></p>
-<p><img alt="Properties Search Basics" src="../images/home-setup/search-form-layout-default.png" /></p>
+<p><a class="glightbox" href="../images/home-setup/search-form-layout-default.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Properties Search Basics" src="../images/home-setup/search-form-layout-default.png" /></a></p>
 <p><strong>Smart Layout</strong></p>
-<p><img alt="Properties Search Basics" src="../images/home-setup/search-form-layout-smart.png" /></p>
+<p><a class="glightbox" href="../images/home-setup/search-form-layout-smart.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Properties Search Basics" src="../images/home-setup/search-form-layout-smart.png" /></a></p>
 <h3 id="search-form-fields-show-hide-reorder-by-drag-drop"><strong>Search Form Fields - Show / Hide - Reorder by Drag &amp; Drop</strong></h3>
 <p>You can also <strong>Show / Hide Fields</strong> on properties search form as well as <strong>Drag and Drop the Fields</strong> to change their display order and you can also change the labels.</p>
-<p><img alt="Properties Search Basics" src="../images/home-setup/search-form-fields-enable-disable-reorder.gif" /></p>
+<p><a class="glightbox" href="../images/home-setup/search-form-fields-enable-disable-reorder.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Properties Search Basics" src="../images/home-setup/search-form-fields-enable-disable-reorder.gif" /></a></p>
 <h3 id="advance-search-fields"><strong>Advance Search Fields</strong></h3>
-<p><img alt="Searcch Form Basics" src="../images/home-setup/advance-search-fields-button.gif" /></p>
+<p><a class="glightbox" href="../images/home-setup/advance-search-fields-button.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Searcch Form Basics" src="../images/home-setup/advance-search-fields-button.gif" /></a></p>
 <h3 id="number-of-fields-to-display-in-top-row"><strong>Number Of Fields to Display in Top Row</strong></h3>
-<p><img alt="Searcch Form Basics" src="../images/home-setup/number-of-fields-to-display-in-top-row.gif" /></p>
+<p><a class="glightbox" href="../images/home-setup/number-of-fields-to-display-in-top-row.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Searcch Form Basics" src="../images/home-setup/number-of-fields-to-display-in-top-row.gif" /></a></p>
 <h3 id="search-button-label-any-text-label"><strong>Search Button Label &amp; Any Text Label</strong></h3>
-<p><img alt="Searcch Form Basics" src="../images/home-setup/search-button-label-any-text.gif" /></p>
+<p><a class="glightbox" href="../images/home-setup/search-button-label-any-text.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Searcch Form Basics" src="../images/home-setup/search-button-label-any-text.gif" /></a></p>
 <h3 id="search-form-locations"><strong>Search Form Locations</strong></h3>
 <p>Properties Search panel contains a section in <strong>Customizer</strong> for Locations <strong>Dashboard → RealHomes → Customize Settings → Properties Search → Search Form Locations</strong> to configure the <strong>Locations</strong> fields of the advance search form.</p>
 <p>First thing is to decide the number of location fields you want to set up for search form. Do not worry too much about it as you can always change these settings in future to match your changing needs.</p>
-<p><img alt="Configure Location Field" src="../images/home-setup/configure-location-field.png" /></p>
+<p><a class="glightbox" href="../images/home-setup/configure-location-field.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Configure Location Field" src="../images/home-setup/configure-location-field.png" /></a></p>
 <p>Select 1 if you want to display all locations into one select box.</p>
 <p>Select 2 if you want to display locations like <strong>State → City OR City → Suburb</strong>.</p>
 <p>Select 3 if you want to display locations like <strong>Country → State → City OR State → City → Suburb</strong></p>
@@ -4283,33 +4383,33 @@
 <p>After that you need to provide suitable labels for location boxes. You can provide these based on your own needs.</p>
 <p>If you face any confusion, Simply make the changes in settings and preview them on homepage. Keep making the changes until you get what you want.</p>
 <p>You can also Hide Empty Locations and Sort Locations Alphabetically. It means that if a location is not assigned to any property it won't be displayed in the location drop-down list.</p>
-<p><img alt="Configure Location Field" src="../images/home-setup/search-form-keyword.gif" /></p>
+<p><a class="glightbox" href="../images/home-setup/search-form-keyword.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Configure Location Field" src="../images/home-setup/search-form-keyword.gif" /></a></p>
 <h3 id="enable-dynamic-locations-optimize-large-number-of-locations"><strong>Enable Dynamic Locations</strong> (Optimize Large Number Of Locations)</h3>
 <p>Speeding up the loading time of large number of locations is now possible. All you have to do is to navigate to <strong>Dashboard → RealHomes → Customize Settings → Properties Search → Search Form Locations</strong> and activate Enable Dynamic Locations option as shown below.</p>
-<p><img alt="Minimum and Maximum Values For Beds &amp; Baths" src="../images/home-setup/dynamic_locations.gif" /></p>
+<p><a class="glightbox" href="../images/home-setup/dynamic_locations.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Minimum and Maximum Values For Beds &amp; Baths" src="../images/home-setup/dynamic_locations.gif" /></a></p>
 <p>It will help your website performance by loading the locations dynamically by scrolling and lists only 15 locations non-hierarchically and 15 more with each scroll until all locations are listed.</p>
 <h3 id="search-form-keyword"><strong>Search Form Keyword</strong></h3>
 <p>Navigate to <strong>Dashboard → RealHomes → Customize Settings → Properties Search → Search Form Keyword</strong> to change <strong>Keyword Label</strong> and <strong>Placeholder Text</strong>.</p>
-<p><img alt="Configure Location Field" src="../images/home-setup/search-form-keyword.gif" /></p>
+<p><a class="glightbox" href="../images/home-setup/search-form-keyword.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Configure Location Field" src="../images/home-setup/search-form-keyword.gif" /></a></p>
 <h3 id="search-form-property-id"><strong>Search Form Property ID</strong></h3>
 <p>Navigate to <strong>Dashboard → RealHomes → Customize Settings → Properties Search → Search Form Property ID</strong> to change <strong>Property ID Label</strong> and <strong>Placeholder Text</strong>.</p>
-<p><img alt="Configure Location Field" src="../images/home-setup/search-form-property-id.gif" /></p>
+<p><a class="glightbox" href="../images/home-setup/search-form-property-id.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Configure Location Field" src="../images/home-setup/search-form-property-id.gif" /></a></p>
 <h3 id="search-form-property-status"><strong>Search Form Property Status</strong></h3>
 <p>Navigate to <strong>Dashboard → RealHomes → Customize Settings → Properties Search → Search Form Property Status</strong> to change <strong>Property Status Label</strong> and <strong>Placeholder Text</strong>.</p>
-<p><img alt="Configure Location Field" src="../images/home-setup/search-form-property-status.gif" /></p>
+<p><a class="glightbox" href="../images/home-setup/search-form-property-status.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Configure Location Field" src="../images/home-setup/search-form-property-status.gif" /></a></p>
 <h3 id="search-form-agents"><strong>Search Form Agents</strong></h3>
 <p>Navigate to <strong>Dashboard → RealHomes → Customize Settings → Properties Search → Search Form Agents</strong> to enable <strong>Multi-Select Feature</strong> and change <strong>Agent Field Label</strong>, <strong>Placeholder Text</strong> and <strong>Selected Text</strong>.</p>
-<p><img alt="Configure Location Field" src="../images/home-setup/search-form-agents.gif" /></p>
+<p><a class="glightbox" href="../images/home-setup/search-form-agents.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Configure Location Field" src="../images/home-setup/search-form-agents.gif" /></a></p>
 <h3 id="beds-baths-fields"><strong>Beds &amp; Baths Fields</strong></h3>
 <p>Properties Search panel also contains a special section for Beds &amp; Baths at <strong>Dashboard → RealHomes → Customize Settings → Properties Search → Search Form Beds and Baths</strong>. Using which, Beds and Baths fields can be customized to your requirements.</p>
-<p><img alt="Minimum and Maximum Values For Beds &amp; Baths" src="../images/home-setup/beds-and-baths-fields.png" /></p>
+<p><a class="glightbox" href="../images/home-setup/beds-and-baths-fields.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Minimum and Maximum Values For Beds &amp; Baths" src="../images/home-setup/beds-and-baths-fields.png" /></a></p>
 <p>In this section:</p>
 <p>1) You can modify the Labels for the Beds &amp; Baths Field.</p>
 <p>2) You can also provide the values to be displayed in the drop-down lists for both fields.</p>
 <p>3) You can modify the search behaviour for beds and baths to Minimum, Maximum or Equals.</p>
 <h3 id="search-form-garages"><strong>Search Form Garages</strong></h3>
 <p>Properties Search panel contains a special section for Garages at <strong>Dashboard → RealHomes → Customize Settings → Properties Search → Search Form Garages</strong>. Using which, Garages fields can be customized to your requirements.</p>
-<p><img alt="Minimum and Maximum Values For Garages" src="../images/home-setup/min-max-garages-fields.png" /></p>
+<p><a class="glightbox" href="../images/home-setup/min-max-garages-fields.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Minimum and Maximum Values For Garages" src="../images/home-setup/min-max-garages-fields.png" /></a></p>
 <p>In this section:</p>
 <ol>
 <li>
@@ -4324,17 +4424,17 @@
 </ol>
 <h3 id="search-form-prices"><strong>Search Form Prices</strong></h3>
 <p>Properties Search panel also contains a special section for Prices at <strong>Dashboard → RealHomes → Customize Settings → Properties Search → Search Form Prices</strong>. Using which, Minimum and Maximum prices fields can be customized to your requirements.</p>
-<p><img alt="Minimum and Maximum Prices" src="../images/home-setup/min-max-price-first.png" /></p>
-<p><img alt="Minimum and Maximum Prices" src="../images/home-setup/min-max-price-second.png" /></p>
+<p><a class="glightbox" href="../images/home-setup/min-max-price-first.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Minimum and Maximum Prices" src="../images/home-setup/min-max-price-first.png" /></a></p>
+<p><a class="glightbox" href="../images/home-setup/min-max-price-second.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Minimum and Maximum Prices" src="../images/home-setup/min-max-price-second.png" /></a></p>
 <h3 id="search-form-areas"><strong>Search Form Areas</strong></h3>
 <p>Properties Search panel contains a section for Area and can be found at <strong>Dashboard → RealHomes → Customize Settings → Properties Search → Search Form Areas</strong>. In this Customizer section, Minimum and Maximum area fields can be customized to your requirements.</p>
-<p><img alt="Minimum and Maximum Area / Related Labels and Placeholder Texts" src="../images/home-setup/search-form-areas.gif" /></p>
+<p><a class="glightbox" href="../images/home-setup/search-form-areas.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Minimum and Maximum Area / Related Labels and Placeholder Texts" src="../images/home-setup/search-form-areas.gif" /></a></p>
 <h3 id="search-form-property-features"><strong>Search Form Property Features</strong></h3>
 <p>Navigate to <strong>Dashboard → RealHomes → Customize Settings → Properties Search → Search Form Property Features</strong> to show or hide the <strong>Property Features</strong> section and change the <strong>Title for Features Toggle</strong>.</p>
-<p><img alt="Minimum and Maximum Area / Related Labels and Placeholder Texts" src="../images/home-setup/search-form-property-features.gif" /></p>
+<p><a class="glightbox" href="../images/home-setup/search-form-property-features.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Minimum and Maximum Area / Related Labels and Placeholder Texts" src="../images/home-setup/search-form-property-features.gif" /></a></p>
 <h3 id="change-advance-search-form-bottom-label-text-optional"><strong>Change Advance Search Form Bottom Label Text (Optional)</strong></h3>
 <p>The advance search label which is displaying at the bottom right corner of the properties search form in Modern Design can be changed in <strong>Dashboard → Home Page → Search Form → Advance Search Label Text</strong>.</p>
-<p><img alt="Advance Search Label Text" src="../images/home-setup/advance-search-label-modern.png" /></p>
+<p><a class="glightbox" href="../images/home-setup/advance-search-label-modern.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Advance Search Label Text" src="../images/home-setup/advance-search-label-modern.png" /></a></p>
 
 
 
@@ -4424,11 +4524,13 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.d6c3db9e.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

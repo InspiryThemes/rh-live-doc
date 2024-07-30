@@ -50,7 +50,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -127,6 +136,8 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -560,20 +571,6 @@
     <li class="md-nav__item">
       <a href="../realhomes-property-booking-payment-setup/" class="md-nav__link">
         Booking Payments
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../bookings.md" class="md-nav__link">
-        Bookings Module
       </a>
     </li>
   
@@ -1138,9 +1135,35 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_4">
+          Home Settings
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Home Settings" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_4">
+          <span class="md-nav__icon md-icon"></span>
+          Home Settings
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
       <a href="../homepage-settings-classic/" class="md-nav__link">
-        Settings (Classic)
+        Classic
       </a>
     </li>
   
@@ -1154,8 +1177,15 @@
   
     <li class="md-nav__item">
       <a href="../homepage-settings-modern/" class="md-nav__link">
-        Settings (Modern)
+        Modern
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1925,6 +1955,48 @@
   
   
     <li class="md-nav__item">
+      <a href="../property/" class="md-nav__link">
+        Property
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user-roles-synchronization/" class="md-nav__link">
+        User Roles and Synchronization
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user-approvals-management/" class="md-nav__link">
+        User Approvals Management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../social-links/" class="md-nav__link">
         Social Links
       </a>
@@ -1998,14 +2070,14 @@
       
       
         <label class="md-nav__link" for="__nav_9">
-          Property Listing Pages
+          Property Listing & Archive Pages
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Property Listing Pages" data-md-level="1">
+      <nav class="md-nav" aria-label="Property Listing & Archive Pages" data-md-level="1">
         <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
-          Property Listing Pages
+          Property Listing & Archive Pages
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -2031,6 +2103,34 @@
     <li class="md-nav__item">
       <a href="../grid-variations-card-settings/" class="md-nav__link">
         Grid Variations & Card Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../archive-taxonomy-pages/" class="md-nav__link">
+        Listing & Archive Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../realhomes-misc-settings/" class="md-nav__link">
+        RealHomes Misc Settings
       </a>
     </li>
   
@@ -4503,59 +4603,59 @@
 <h1 id="add-property">Add Property</h1>
 <p>To add a new property, go to <strong>Dashboard → Easy Real Estate → New Property</strong></p>
 <h3 id="add-property-title-and-property-description"><strong>Add <em>Property Title</em> and <em>Property Description</em></strong></h3>
-<p><img alt="Property Title &amp; Description" src="../images/add-content/title-and-description.png" /></p>
+<p><a class="glightbox" href="../images/add-content/title-and-description.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Title &amp; Description" src="../images/add-content/title-and-description.png" /></a></p>
 <h3 id="add-basic-information"><strong>Add Basic Information</strong></h3>
 <p>Add basic information about the property e.g. price, area, beds, baths, garages, etc. </p>
-<p><img alt="Property Basic Information" src="../images/add-content/basic-info.png" /></p>
+<p><a class="glightbox" href="../images/add-content/basic-info.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Basic Information" src="../images/add-content/basic-info.png" /></a></p>
 <h3 id="add-additional-information"><strong>Add Additional Information</strong></h3>
 <p>You can add any additional information as key-value pairs in additional information.</p>
-<p><img alt="Property Additional Information" src="../images/add-content/additional-information.png" /></p>
+<p><a class="glightbox" href="../images/add-content/additional-information.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Additional Information" src="../images/add-content/additional-information.png" /></a></p>
 <h3 id="add-vacation-rentals-information"><strong>Add Vacation Rentals Information</strong></h3>
 <p>If you are using the <strong>RealHomes Vacation Rentals</strong> plugin and have <a href="../vacation-rentals-setup/">configured</a> it, you can see the <strong>Vacation Rentals</strong> tab at the top. There you can add pricing and other property rental information. For more information, check out the detailed guide to adding a property with <a href="../add-property-vr/">vacation rental information here</a>.</p>
-<p><img alt="Property Basic Information" src="../images/add-content/vacation-rentals.png" /></p>
+<p><a class="glightbox" href="../images/add-content/vacation-rentals.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Basic Information" src="../images/add-content/vacation-rentals.png" /></a></p>
 <h3 id="icalendar-synchronization"><strong>iCalendar Synchronization</strong></h3>
 <p>To stay up to date and avoid double bookings when you have listed your properties on third-party websites, you can synchronize the booking calendar with third-party calendar services.</p>
 <h4 id="step-1-add-icalendar-feed-page"><strong>Step 1. Add iCalendar Feed Page</strong></h4>
 <p>Before syncing the properties' calendar dates, you need to create an <em>iCalendar feed</em> page using the <strong>iCalendar Feed</strong> template, as displayed in the following screenshot.</p>
-<p><img alt="Property Basic Information" src="../images/add-content/add-icalendar-page.png" /></p>
+<p><a class="glightbox" href="../images/add-content/add-icalendar-page.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Basic Information" src="../images/add-content/add-icalendar-page.png" /></a></p>
 <h4 id="step-2-syncing-your-booking-calendar-to-third-party-calendars"><strong>Step 2. Syncing your booking calendar to third-party calendars</strong></h4>
 <p>Once you have created the iCalendar feed page, you can see the booking calendar feed export URL at the very bottom of the <em>Vacation Rentals</em> property meta-box tab (screenshot below). Copy the <strong>Feed URL</strong> and add it to the third-party iCalendar import field as per their settings. </p>
-<p><img alt="iCalendar import &amp; export" src="../images/add-content/icalendar-import-export.png" /></p>
+<p><a class="glightbox" href="../images/add-content/icalendar-import-export.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="iCalendar import &amp; export" src="../images/add-content/icalendar-import-export.png" /></a></p>
 <h4 id="step-3-syncing-your-booking-calendar-from-third-party-calendars"><strong>Step 3. Syncing your booking calendar from third-party calendars</strong></h4>
 <p>To sync third-party booking calendars with your booking calendar, copy the iCalendar feed URL from their website. After that, you can add that feed URL to <em>iCalendar Import</em> section (screenshot below). Set a name for reference in the <strong>Feed Name</strong> field and feed URL to the <strong>Feed URL</strong> field. You can add multiple feed URLs to sync from.</p>
-<p><img alt="iCalendar import &amp; export" src="../images/add-content/icalendar-import-export.png" /></p>
+<p><a class="glightbox" href="../images/add-content/icalendar-import-export.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="iCalendar import &amp; export" src="../images/add-content/icalendar-import-export.png" /></a></p>
 <h3 id="mark-property-as-featured"><strong>Mark Property as Featured</strong></h3>
 <p>If you want to add this property into featured properties, then mark this property as Featured.</p>
-<p><img alt="Mark Property as Featured" src="../images/add-content/mark-featured.png" /></p>
+<p><a class="glightbox" href="../images/add-content/mark-featured.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Mark Property as Featured" src="../images/add-content/mark-featured.png" /></a></p>
 <h3 id="provide-location-on-google-map"><strong>Provide Location on Google Map</strong></h3>
 <p>Provide property address and drag the Google map pointer to the correct location. </p>
-<p><img alt="Property Map" src="../images/add-content/property-map.png" /></p>
+<p><a class="glightbox" href="../images/add-content/property-map.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Map" src="../images/add-content/property-map.png" /></a></p>
 <h3 id="add-gallery-images"><strong>Add Gallery Images</strong></h3>
 <p>Provide some nice images for the property gallery.</p>
 <p><strong>Ultra</strong>
-<img alt="Property Gallery - Ultra" src="../images/add-content/property-gallery-ultra.png" /></p>
+<a class="glightbox" href="../images/add-content/property-gallery-ultra.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Gallery - Ultra" src="../images/add-content/property-gallery-ultra.png" /></a></p>
 <blockquote>
 <p><strong>Note</strong>: Images should have minimum size of 1240px by 720px. Bigger size images will be cropped automatically. Minimum 2 images are required to display the gallery.</p>
 </blockquote>
 <p><strong>Modern</strong>
-<img alt="Property Gallery - Modern" src="../images/add-content/property-gallery3.png" /></p>
+<a class="glightbox" href="../images/add-content/property-gallery3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Gallery - Modern" src="../images/add-content/property-gallery3.png" /></a></p>
 <blockquote>
 <p><strong>Note</strong>: Images should have minimum size of 1240px by 720px. Bigger size images will be cropped automatically. Minimum 2 images are required to display the gallery.</p>
 </blockquote>
 <p><strong>Classic</strong>
-<img alt="Property Gallery - Classic" src="../images/add-content/property-gallery2.png" /></p>
+<a class="glightbox" href="../images/add-content/property-gallery2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Gallery - Classic" src="../images/add-content/property-gallery2.png" /></a></p>
 <blockquote>
 <p><strong>Note</strong>: Images should have minimum size of 1170px by 648px for thumbnails on right and 830px by 460px for thumbnails on bottom. Bigger size images will be cropped automatically. Minimum 2 images are required to display gallery.</p>
 </blockquote>
 <h3 id="add-floor-plans"><strong>Add Floor Plans</strong></h3>
 <p>Provide floor plan details, the <strong>Floor Plan Image</strong> and the <strong>Floor Name</strong> are the two important details you must add, otherwise, the floor section will not show on property details page.</p>
-<p><img alt="Property Floor Plans" src="../images/add-content/floor-plans.png" /></p>
+<p><a class="glightbox" href="../images/add-content/floor-plans.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Floor Plans" src="../images/add-content/floor-plans.png" /></a></p>
 <h3 id="add-featured-image"><strong>Add Featured Image</strong></h3>
 <p>You must set a featured image to the property. This featured image will be displayed in property cards on listing pages throughout the website.</p>
 <p><strong>Featured Image</strong></p>
 <p><strong>Classic:</strong> <span style="color: #ec894d;">The featured image in <strong>Classic Design</strong> should have Minimum Width of <strong>770 pixels</strong> and Minimum Height of <strong>386 pixels</strong>.</span></p>
 <p><strong>Modern:</strong> <span style="color: #1ea69a;">The featured image in <strong>Modern Design</strong> should have Minimum Width of <strong>680 pixels</strong> and Minimum Height of <strong>510 pixels</strong>.</span></p>
-<p><img alt="Property Featured Image" src="../images/add-content/featured-image-updated.png" /></p>
+<p><a class="glightbox" href="../images/add-content/featured-image-updated.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Featured Image" src="../images/add-content/featured-image-updated.png" /></a></p>
 <h3 id="add-video-tour-and-virtual-tour"><strong>Add Video Tour and Virtual Tour</strong></h3>
 <p>Suppose your property has a virtual tour video. In that case, it is recommended that you upload the video on Vimeo or YouTube and provide its URL here with a related screenshot or property photo.</p>
 <p>Property Photo is very important because if no property photo is assigned to the video, then it will not be shown. You can add multiple virtual tour videos by clicking the <strong>+ Add more</strong> button.</p>
@@ -4564,10 +4664,10 @@
 </blockquote>
 <p><code>&lt;iframe src="https://my.matterport.com/show/?m=aSx1MpRRqif&amp;play=1" width="100%" height="100%" allowvr="" allowfullscreen="allowfullscreen"&gt;&lt;/iframe&gt;</code></p>
 <p>You can also use the <a href="https://wordpress.org/plugins/ipanorama-360-virtual-tour-builder-lite/">iPanorama 360 WordPress Virtual Tour Builder</a> plugin to build custom virtual tours, and then put current property related <code>iPanorama</code> short-code in the <strong>360 Virtual Tour</strong> box.</p>
-<p><img alt="Property Video" src="../images/add-content/property-video.png" /></p>
+<p><a class="glightbox" href="../images/add-content/property-video.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Video" src="../images/add-content/property-video.png" /></a></p>
 <h3 id="assign-agent-information"><strong>Assign Agent Information</strong></h3>
 <p>Choose the information you want to display in the Agent's Information section.</p>
-<p><img alt="Property Agent" src="../images/add-content/property-agent-info.png" /></p>
+<p><a class="glightbox" href="../images/add-content/property-agent-info.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Agent" src="../images/add-content/property-agent-info.png" /></a></p>
 <blockquote>
 <p>Difference Between Author Profile Information and Agent's Information </p>
 <p>From the visitor's point of view, there is no difference, and information for an agent and author will be displayed similarly.</p>
@@ -4577,55 +4677,55 @@
 <li><strong>None</strong> will hide the agent's information box.</li>
 <li><strong>Author profile information</strong> will display the Author( user who added the property ) information. You can configure your user information from edit profile page ( Please check the related documentation section for details of setting up front end profile edit page ). 
 If you have adequate rights, You can also modify the author from Author meta box on property edit page. 
-<img alt="Property Author" src="../images/add-content/property-author.png" /></li>
+<a class="glightbox" href="../images/add-content/property-author.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Author" src="../images/add-content/property-author.png" /></a></li>
 <li><strong>Display agent's information</strong> will display the selected agent's information. You can add the agent from <strong>Dashboard → Agents → Add New</strong>.</li>
 </ol>
 <h3 id="energy-performance"><strong>Energy Performance</strong></h3>
 <p>You can add a property <strong>Energy Performance Certificate</strong> details in this section. This information will display with a visual energy class graphic representation.
-<img alt="Property Author" src="../images/add-content/energy-performance.png" /></p>
+<a class="glightbox" href="../images/add-content/energy-performance.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Author" src="../images/add-content/energy-performance.png" /></a></p>
 <h3 id="schedule-a-tour"><strong>Schedule a Tour</strong></h3>
 <p>You can easily showcase the <strong>Schedule A Tour</strong> section on the property details page by activating this feature.</p>
-<p><img alt="Schedule a Tour - Property Details Page" src="../images/single-property-page/schedule-a-tour.png" /></p>
+<p><a class="glightbox" href="../images/single-property-page/schedule-a-tour.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Schedule a Tour - Property Details Page" src="../images/single-property-page/schedule-a-tour.png" /></a></p>
 <h3 id="misc-settings"><strong>Misc Settings</strong></h3>
 <h4 id="mark-property-as-sticky"><strong>Mark Property as Sticky</strong></h4>
 <p>If you want to make this property stick to top on home page and listing pages, then mark this property as <strong>Sticky</strong>.</p>
-<p><img alt="Property Floor Plans" src="../images/single-property-page/sticky-property.png" /></p>
+<p><a class="glightbox" href="../images/single-property-page/sticky-property.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Floor Plans" src="../images/single-property-page/sticky-property.png" /></a></p>
 <h4 id="property-label-text-background-color">Property Label Text &amp; Background Color</h4>
 <p>You can apply a custom banner or label to each property card for the listing pages and other sections using <strong>Property Label Text &amp; Background Color</strong>.</p>
-<p><img alt="Property Label Text &amp; Background Color" src="../images/single-property-page/property-label-text-background-color.png" /></p>
+<p><a class="glightbox" href="../images/single-property-page/property-label-text-background-color.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Label Text &amp; Background Color" src="../images/single-property-page/property-label-text-background-color.png" /></a></p>
 <h4 id="attachments">Attachments</h4>
 <p>Using the Attachments feature, you can upload important property attachments, documents etc to each property.</p>
-<p><img alt="Property Label Text &amp; Background Color" src="../images/single-property-page/upload-property-attachments.png" /></p>
+<p><a class="glightbox" href="../images/single-property-page/upload-property-attachments.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Label Text &amp; Background Color" src="../images/single-property-page/upload-property-attachments.png" /></a></p>
 <h4 id="owner-information-private-note">Owner Information &amp; Private Note</h4>
 <p>Property owner information and private note can only be used for internal information purposes only. It is not displayed anywhere throughout the website.</p>
-<p><img alt="Property Label Text &amp; Background Color" src="../images/single-property-page/property-owner-information.png" /></p>
+<p><a class="glightbox" href="../images/single-property-page/property-owner-information.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Label Text &amp; Background Color" src="../images/single-property-page/property-owner-information.png" /></a></p>
 <h4 id="message-to-the-reviewer">Message to the Reviewer</h4>
 <p>This area contains a message from the property submitter for the property reviewer or website administrator. It is not displayed anywhere for the public.</p>
-<p><img alt="Property Label Text &amp; Background Color" src="../images/single-property-page/message-to-the-reviewer.png" /></p>
+<p><a class="glightbox" href="../images/single-property-page/message-to-the-reviewer.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Label Text &amp; Background Color" src="../images/single-property-page/message-to-the-reviewer.png" /></a></p>
 <h3 id="add-property-in-homepage-slider"><strong>Add Property in Homepage Slider</strong></h3>
 <p>If you want to add this property to the homepage slider, check the related option and provide a slide image.</p>
-<p><img alt="Property Floor Plans" src="../images/add-content/add-property-to-home-page-slider.png" /></p>
+<p><a class="glightbox" href="../images/add-content/add-property-to-home-page-slider.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Floor Plans" src="../images/add-content/add-property-to-home-page-slider.png" /></a></p>
 <h3 id="add-top-banner"><strong>Add Top Banner</strong></h3>
 <h5 id="classic"><strong>Classic</strong></h5>
 <p>You can override the default banner set in Customizer settings by adding a new banner for a specific property in the below settings.</p>
-<p><img alt="Property Home Slider" src="../images/add-content/top-banner-property-settings.png" /></p>
+<p><a class="glightbox" href="../images/add-content/top-banner-property-settings.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Home Slider" src="../images/add-content/top-banner-property-settings.png" /></a></p>
 <h5 id="modern"><strong>Modern</strong></h5>
 <p>Along with banner settings you can also hide the advanced search form in the header on single property page.</p>
-<p><img alt="Property Home Slider" src="../images/add-content/top-banner-property-settings-modern.png" /></p>
+<p><a class="glightbox" href="../images/add-content/top-banner-property-settings-modern.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Home Slider" src="../images/add-content/top-banner-property-settings-modern.png" /></a></p>
 <div class="admonition info">
 <p class="admonition-title">More information about <strong>Banner Settings</strong> can be found here: </p>
 <p><strong><a href="https://support.inspirythemes.com/knowledgebase/how-to-configure-the-banner-settings/">https://support.inspirythemes.com/knowledgebase/how-to-configure-the-banner-settings/</a></strong></p>
 </div>
 <h3 id="custom-header-footer"><strong>Custom Header &amp; Footer</strong></h3>
 <p>You can also apply a unique custom header and footer to any property by selecting it from <strong>Custom Header</strong> or <strong>Custom Footer</strong> settings.</p>
-<p><img alt="Custom Header &amp; Footer" src="../images/add-content/custom-header-footer-single-property.png" /></p>
+<p><a class="glightbox" href="../images/add-content/custom-header-footer-single-property.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Custom Header &amp; Footer" src="../images/add-content/custom-header-footer-single-property.png" /></a></p>
 <div class="admonition info">
 <p class="admonition-title">Custom Header &amp; Footer</p>
 <p>You can create your own Custom Header or Footer using Elementor (free version) with RealHomes. You can consult <strong><a href="https://realhomes.io/documentation/custom-header-footer-elementor/">this section of the documentation</a></strong> to learn how.</p>
 </div>
 <h3 id="addselect-property-features"><strong>Add/Select Property Features</strong></h3>
 <p>You can choose or add <strong>Property Features</strong> from related meta-box displayed in the following screenshot.</p>
-<p><img alt="Property Features" src="../images/add-content/property-features-updated.png" /></p>
+<p><a class="glightbox" href="../images/add-content/property-features-updated.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Features" src="../images/add-content/property-features-updated.png" /></a></p>
 <p>You can also add an icon to each property feature. This icon will appear on the property details page, before property feature. To add an icon to a feature, follow these steps:</p>
 <ul>
 <li>
@@ -4635,7 +4735,7 @@ If you have adequate rights, You can also modify the author from Author meta box
 <p>Create a new property feature or select an existing one. </p>
 </li>
 </ul>
-<p><img alt="Property Add New Features" src="../images/add-content/property-add-features.png" /></p>
+<p><a class="glightbox" href="../images/add-content/property-add-features.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Add New Features" src="../images/add-content/property-add-features.png" /></a></p>
 <ul>
 <li>
 <p>Upload your icon using Property Feature Icon option.</p>
@@ -4650,22 +4750,22 @@ If you have adequate rights, You can also modify the author from Author meta box
 </div>
 <h3 id="addassign-property-types"><strong>Add/Assign Property Types</strong></h3>
 <p>You can choose or add <strong>Property Types</strong> from related meta box as displayed in screenshot below.</p>
-<p><img alt="Property Type" src="../images/add-content/property-types-updated.png" /></p>
+<p><a class="glightbox" href="../images/add-content/property-types-updated.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Type" src="../images/add-content/property-types-updated.png" /></a></p>
 <h3 id="addassign-property-locations"><strong>Add/Assign Property Locations</strong></h3>
 <p>You can choose or add <strong>Property Locations</strong> from related meta-box as displayed below.</p>
-<p><img alt="Property City" src="../images/add-content/property-cities-updated.png" /></p>
+<p><a class="glightbox" href="../images/add-content/property-cities-updated.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property City" src="../images/add-content/property-cities-updated.png" /></a></p>
 <h3 id="addassign-property-statuses"><strong>Add/Assign Property Statuses</strong></h3>
 <p>You can choose or add <strong>Property Statuses</strong> from related meta-box displayed in screenshot below.</p>
-<p><img alt="Property Status" src="../images/add-content/property-status-updated.png" /></p>
+<p><a class="glightbox" href="../images/add-content/property-status-updated.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Status" src="../images/add-content/property-status-updated.png" /></a></p>
 <h3 id="assign-parent-property"><strong>Assign Parent Property</strong></h3>
 <p>Suppose this property is a sub/child property of another property. In that case, you can select the <strong>Parent Property</strong> from the related meta box, as shown below.</p>
-<p><img alt="Property Attributes" src="../images/add-content/property-attributes.png" /></p>
+<p><a class="glightbox" href="../images/add-content/property-attributes.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Attributes" src="../images/add-content/property-attributes.png" /></a></p>
 <h3 id="property-page-layout"><strong>Property Page Layout</strong></h3>
 <p>If you want to make the single property page full width, then you can change the <strong>Page Template</strong> from <strong>Templates</strong> to <strong>Property Full Width</strong>. For <strong>Classic Editor</strong>, select the same template from <strong>Page Attributes</strong>.</p>
-<p><img alt="Property Attributes" src="../images/add-content/select-single-property-template.gif" /></p>
+<p><a class="glightbox" href="../images/add-content/select-single-property-template.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Attributes" src="../images/add-content/select-single-property-template.gif" /></a></p>
 <h2 id="realhomes-misc-settings"><strong>RealHomes Misc Settings</strong></h2>
 <p>There are miscelanious settings available for the single property page, which you can use to change the custom header, footer, sidebar or other single property attributes.</p>
-<p><img alt="Property Misc Settings" src="../images/add-content/misc-settings-add-property.gif" /></p>
+<p><a class="glightbox" href="../images/add-content/misc-settings-add-property.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Property Misc Settings" src="../images/add-content/misc-settings-add-property.gif" /></a></p>
 <p><strong>Publish the property once it is ready</strong>.</p>
 
 
@@ -4756,11 +4856,13 @@ If you have adequate rights, You can also modify the author from Author meta box
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.d6c3db9e.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

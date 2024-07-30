@@ -50,7 +50,16 @@
     
     
     
-  </head>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -127,6 +136,8 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -560,20 +571,6 @@
     <li class="md-nav__item">
       <a href="../realhomes-property-booking-payment-setup/" class="md-nav__link">
         Booking Payments
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../bookings.md" class="md-nav__link">
-        Bookings Module
       </a>
     </li>
   
@@ -1138,9 +1135,35 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_4">
+          Home Settings
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Home Settings" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_4">
+          <span class="md-nav__icon md-icon"></span>
+          Home Settings
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
       <a href="../homepage-settings-classic/" class="md-nav__link">
-        Settings (Classic)
+        Classic
       </a>
     </li>
   
@@ -1154,8 +1177,15 @@
   
     <li class="md-nav__item">
       <a href="../homepage-settings-modern/" class="md-nav__link">
-        Settings (Modern)
+        Modern
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1624,6 +1654,48 @@
   
   
     <li class="md-nav__item">
+      <a href="../property/" class="md-nav__link">
+        Property
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user-roles-synchronization/" class="md-nav__link">
+        User Roles and Synchronization
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user-approvals-management/" class="md-nav__link">
+        User Approvals Management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../social-links/" class="md-nav__link">
         Social Links
       </a>
@@ -1697,14 +1769,14 @@
       
       
         <label class="md-nav__link" for="__nav_9">
-          Property Listing Pages
+          Property Listing & Archive Pages
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Property Listing Pages" data-md-level="1">
+      <nav class="md-nav" aria-label="Property Listing & Archive Pages" data-md-level="1">
         <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
-          Property Listing Pages
+          Property Listing & Archive Pages
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -1730,6 +1802,34 @@
     <li class="md-nav__item">
       <a href="../grid-variations-card-settings/" class="md-nav__link">
         Grid Variations & Card Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../archive-taxonomy-pages/" class="md-nav__link">
+        Listing & Archive Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../realhomes-misc-settings/" class="md-nav__link">
+        RealHomes Misc Settings
       </a>
     </li>
   
@@ -3971,18 +4071,18 @@
 <ol>
 <li>
 <p>Navigate to <strong>Dashboard → Pages</strong> and edit the page assigned as Home Page (shown in the following screenshot).
-<img alt="Edit Home Page" src="../images/idx/edit-home-page.png" /></p>
+<a class="glightbox" href="../images/idx/edit-home-page.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Edit Home Page" src="../images/idx/edit-home-page.png" /></a></p>
 </li>
 <li>
 <p>You will see the <strong>Homepage Settings</strong> on this <strong>Page Edit</strong> screen so click on <strong>Slider Area</strong> and select <strong>Slider Based on Slides Custom Post Type</strong>.
-<img alt="Slider Based on Slides Custom Post Type" src="../images/idx/home-page-settings-slides-slider.png" /></p>
+<a class="glightbox" href="../images/idx/home-page-settings-slides-slider.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Slider Based on Slides Custom Post Type" src="../images/idx/home-page-settings-slides-slider.png" /></a></p>
 </li>
 <li>
 <p>Navigate to <strong>Dashboard → Easy Real Estate → Slides</strong> and click on Add New.</p>
 </li>
 <li>
 <p>Enter the <strong>Title</strong>, <strong>Description</strong>, <strong>Target Link</strong> and set a <strong>Featured Image</strong> of the property as displayed in the following screenshot.<br/>
-<img alt="Creating slider using iHomeFinder content" src="../images/idx/dsidxpress-slides.png" /></p>
+<a class="glightbox" href="../images/idx/dsidxpress-slides.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Creating slider using iHomeFinder content" src="../images/idx/dsidxpress-slides.png" /></a></p>
 </li>
 <li>
 <p>After adding the content for the slide and setting up featured image click on <strong>Publish</strong>.</p>
@@ -3999,19 +4099,19 @@
 </li>
 <li>
 <p>Look for the widget area named <strong>Home Search Area</strong> and put <strong>IDX Guided Search</strong> widget in it.
-<img alt="RealHomes Documentation" src="../images/idx/idx-guided-search-widget.png" /></p>
+<a class="glightbox" href="../images/idx/idx-guided-search-widget.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="RealHomes Documentation" src="../images/idx/idx-guided-search-widget.png" /></a></p>
 </li>
 <li>
 <p>After that visit the homepage and you wil have the <strong>dsIDXpress Search Widget</strong> in place of RealHomes default search form.</p>
 </li>
 </ol>
-<p><img alt="RealHomes Documentation" src="../images/idx/idx-guided-search-frontend.png" /></p>
+<p><a class="glightbox" href="../images/idx/idx-guided-search-frontend.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="RealHomes Documentation" src="../images/idx/idx-guided-search-frontend.png" /></a></p>
 <h3 id="shortcodes"><strong>Shortcodes</strong></h3>
 <p><strong>dsIDXpress IDX plugin</strong> gives you a feature to create the shortcodes via 4 <strong>dsIDXpress IDX Shortcode</strong> options in <strong>Visual Editor</strong>.</p>
-<p><img alt="Creating slider using iHomeFinder content" src="../images/idx/dsidxpress-shortcode-option.png" /></p>
+<p><a class="glightbox" href="../images/idx/dsidxpress-shortcode-option.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Creating slider using iHomeFinder content" src="../images/idx/dsidxpress-shortcode-option.png" /></a></p>
 <h3 id="adding-idx-content-to-home-page"><strong>Adding IDX Content to Home Page</strong></h3>
 <p><strong>dsIDXpress IDX plugin</strong> provides multiple shortcodes as we mentioned above. So use the <strong>dsIDXpress IDX Shortcode</strong> option (shown in the screenshot below) in <strong>Visual Editor</strong> to insert the shortcode of your choice and options.</p>
-<p><img alt="Creating slider using iHomeFinder content" src="../images/idx/dsidxpress-shortcode-option.png" /></p>
+<p><a class="glightbox" href="../images/idx/dsidxpress-shortcode-option.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Creating slider using iHomeFinder content" src="../images/idx/dsidxpress-shortcode-option.png" /></a></p>
 <p>You can click on the <strong>dsIDXpress IDX Shortcode</strong> option to select the desired option for the content and then click on <strong>Insert Listing</strong> button to insert the shortcode to the post/page of your choice.</p>
 
 
@@ -4067,11 +4167,13 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.d6c3db9e.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
