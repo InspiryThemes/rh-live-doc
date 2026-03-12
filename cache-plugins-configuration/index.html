@@ -5,13 +5,13 @@
       
       
       
-        <link rel="canonical" href="https://realhomes.io/documentation/property-types/">
+        <link rel="canonical" href="https://realhomes.io/documentation/cache-plugins-configuration/">
       
       
-        <link rel="prev" href="../property-taxonomy-terms/">
+        <link rel="prev" href="../plugins/">
       
       
-        <link rel="next" href="../contact-information-widget/">
+        <link rel="next" href="../feedback/">
       
       
         
@@ -22,7 +22,7 @@
     
     
       
-        <title>Property Types - RealHomes Documentation</title>
+        <title>Caching &amp; Security Tokens - RealHomes Documentation</title>
       
     
     
@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#property-types-widget" class="md-skip">
+        <a href="#server-caching-realhomes" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Property Types
+              Caching &amp; Security Tokens
             
           </span>
         </div>
@@ -239,18 +239,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -271,7 +273,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -398,10 +400,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../cache-plugins-configuration/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Caching &amp; Security Tokens
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -417,6 +446,93 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#litespeed-cache-configuration-highly-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LiteSpeed Cache Configuration (Highly Recommended)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LiteSpeed Cache Configuration (Highly Recommended)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixing-google-recaptcha-issues-with-litespeed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixing Google reCAPTCHA Issues with LiteSpeed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-advice-for-other-cache-plugins-wp-rocket-autoptimize-etc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General Advice for Other Cache Plugins (WP Rocket, Autoptimize, etc.)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="General Advice for Other Cache Plugins (WP Rocket, Autoptimize, etc.)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-exclude-dynamic-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Exclude Dynamic Pages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-adjust-cache-lifespan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Adjust Cache Lifespan
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -6310,20 +6426,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_27" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_27">
         
           
           <label class="md-nav__link" for="__nav_27" id="__nav_27_label" tabindex="0">
@@ -6344,7 +6458,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_27_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_27_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_27">
             <span class="md-nav__icon md-icon"></span>
             
@@ -6639,19 +6753,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../property-types/" class="md-nav__link">
         
   
   
@@ -6667,7 +6772,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -8112,6 +8216,81 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#litespeed-cache-configuration-highly-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LiteSpeed Cache Configuration (Highly Recommended)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LiteSpeed Cache Configuration (Highly Recommended)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixing-google-recaptcha-issues-with-litespeed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixing Google reCAPTCHA Issues with LiteSpeed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-advice-for-other-cache-plugins-wp-rocket-autoptimize-etc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General Advice for Other Cache Plugins (WP Rocket, Autoptimize, etc.)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="General Advice for Other Cache Plugins (WP Rocket, Autoptimize, etc.)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-exclude-dynamic-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Exclude Dynamic Pages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-adjust-cache-lifespan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Adjust Cache Lifespan
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -8127,22 +8306,77 @@
 
 
 
-<h1 id="property-types-widget">Property Types Widget</h1>
+<h1 id="server-caching-realhomes">Server Caching &amp; RealHomes</h1>
+<p>If you are using a cache plugin like <strong>LiteSpeed Cache</strong>, <strong>WP Rocket</strong>, or any other caching tool, you may encounter issues with interactive features like <strong>AJAX Login</strong>, <strong>Registration</strong>, <strong>Add to Favorites</strong>, or <strong>Property Submissions</strong>. </p>
+<p>This is usually because these features rely on security tokens called <strong>Nonces</strong> (number used once). By default, WordPress nonces expire every 12-24 hours. If your cache plugin saves a page with a nonce and serves that cached page <em>after</em> the nonce has expired, the form validation will fail and the request will be rejected.</p>
+<p>To ensure RealHomes works perfectly with your cache plugin, you need to tell the caching system which security tokens should remain dynamic and never be cached.</p>
+<hr>
+<h2 id="litespeed-cache-configuration-highly-recommended">LiteSpeed Cache Configuration (Highly Recommended)</h2>
+<p>If you are using <strong>LiteSpeed Cache</strong>, the best way to handle nonces is by using the <strong>ESI (Edge Side Includes)</strong> feature. This allows the theme to privately serve fresh security tokens dynamically, even on pages that are otherwise fully public and cached.</p>
+<ol>
+<li>Navigate to <strong>LiteSpeed Cache → Cache → [5] ESI</strong>.</li>
+<li>Enable <strong>Enable ESI</strong> if it is not enabled already.</li>
+<li>Find the text box labeled <strong>ESI Nonces</strong>.</li>
+<li>Copy the following list of RealHomes nonces (one per line) and paste it into that box:</li>
+</ol>
+<div class="highlight"><pre><span></span><code>inspiry-ajax-login-nonce
+inspiry-ajax-register-nonce
+inspiry-ajax-forgot-nonce
+ere_inline_otp_nonce
+ere_social_login_nonce
+add_to_favorite_nonce
+favorites_nonce
+fav_share_nonce
+compare_share_nonce
+similar_property_nonce
+inspiry_save_search
+saved_searches_nonce
+agency_search_nonce
+agent_search_nonce
+send_message_nonce
+agent_message_nonce
+schedule_a_tour_nonce
+rvr_booking_request
+realhomes_report_property_form_nonce
+send_cfos_message_nonce
+submit_property
+submit_agent_agency
+update_user
+inspiry_allow_upload
+dashboard_analytics_nonce
+rh_unit_switcher_nonce
+</code></pre></div>
+<ol>
+<li>Click <strong>Save Changes</strong>.</li>
+</ol>
+<hr>
+<h3 id="fixing-google-recaptcha-issues-with-litespeed">Fixing Google reCAPTCHA Issues with LiteSpeed</h3>
+<p>If you use Google reCAPTCHA and see errors like <em>"reCAPTCHA Failed: The response parameter is missing,"</em> you should exclude reCAPTCHA scripts from being combined, minified, or deferred by the caching plugin.</p>
+<ol>
+<li>Navigate to <strong>LiteSpeed Cache → Page Optimization → Tuning</strong>.</li>
+<li>Find the <strong>JS Excludes</strong> option.</li>
+<li>Add the following lines:</li>
+</ol>
+<div class="highlight"><pre><span></span><code>https://www.google.com/recaptcha/api.js
+grecaptcha
+loadInspiryReCAPTCHA
+</code></pre></div>
+<ol>
+<li>Click <strong>Save Changes</strong> and purge your cache.</li>
+</ol>
+<hr>
+<h2 id="general-advice-for-other-cache-plugins-wp-rocket-autoptimize-etc">General Advice for Other Cache Plugins (WP Rocket, Autoptimize, etc.)</h2>
+<p>If your cache plugin does not support ESI (like WP Rocket), it cannot serve dynamic tokens inside a cached page. To prevent nonces from expiring and breaking forms, you should follow these rules:</p>
+<h3 id="1-exclude-dynamic-pages">1. Exclude Dynamic Pages</h3>
+<p>Avoid caching the following pages entirely:</p>
 <ul>
-<li>Go to <strong>Dashboard → Appearance → Widgets</strong> and look for <strong>RealHomes - Property Types</strong> widget. </li>
+<li><strong>Login &amp; Register Page</strong></li>
+<li><strong>User Dashboard Pages</strong> (My Properties, Profile, Submissions, Favorites)</li>
+<li><strong>Submit Property Page</strong></li>
 </ul>
-<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/widgets/property-types-widget.png" data-desc-position="bottom"><img alt="RealHomes Documentation" src="../images/widgets/property-types-widget.png"></a></p>
-<ul>
-<li>Use that widget in a sidebar and provide its title. </li>
-</ul>
-<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/widgets/property-types-widget-settings.png" data-desc-position="bottom"><img alt="RealHomes Documentation" src="../images/widgets/property-types-widget-settings.png"></a></p>
-<ul>
-<li>Now check out the front end of your site and you will have the <strong>Property Types</strong> widget working. </li>
-</ul>
-<p><strong>Classic</strong> <br>
-<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/widgets/property-types-frontend.png" data-desc-position="bottom"><img alt="RealHomes Documentation" src="../images/widgets/property-types-frontend.png"></a></p>
-<p><strong>Modern</strong> <br>
-<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/widgets/property-types-frontend-mod.png" data-desc-position="bottom"><img alt="RealHomes Documentation" src="../images/widgets/property-types-frontend-mod.png"></a></p>
+<h3 id="2-adjust-cache-lifespan">2. Adjust Cache Lifespan</h3>
+<p>For interactive features on other public pages (like the "Favorite" or "Compare" buttons appearing on property cards), you should set your <strong>Cache Lifespan</strong> to <strong>less than 12 hours</strong> (ideally 10 hours). </p>
+<p>Because WordPress nonces expire every 12 to 24 hours naturally, purging the cache every 10 hours guarantees that your visitors will never be served a stale security token.</p>
 
 
 
@@ -8171,7 +8405,7 @@
 	  <div class="md-footer-nav">
 		<nav class="md-footer-nav__inner md-grid" aria-label="footer.title">
 		  
-			<a href="../property-taxonomy-terms/" title="Property Taxonomy Terms" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+			<a href="../plugins/" title="Plugins" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
 			  <div class="md-footer-nav__button md-icon">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
 			  </div>
@@ -8180,19 +8414,19 @@
 				  <span class="md-footer-nav__direction">
 					Previous
 				  </span>
-				  Property Taxonomy Terms
+				  Plugins
 				</div>
 			  </div>
 			</a>
 		  
 		  
-			<a href="../contact-information-widget/" title="Contact Information" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+			<a href="../feedback/" title="Feedback" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
 			  <div class="md-footer-nav__title">
 				<div class="md-ellipsis">
 				  <span class="md-footer-nav__direction">
 					Next
 				  </span>
-				  Contact Information
+				  Feedback
 				</div>
 			  </div>
 			  <div class="md-footer-nav__button md-icon">
