@@ -3560,34 +3560,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Configuring Webhooks in RealHomes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#v451-and-later" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        v4.5.1 and Later
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#v450-and-earlier" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        v4.5.0 and Earlier
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
     </ul>
@@ -8253,34 +8225,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Configuring Webhooks in RealHomes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#v451-and-later" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        v4.5.1 and Later
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#v450-and-earlier" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        v4.5.0 and Earlier
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
     </ul>
@@ -8308,20 +8252,23 @@
 <hr>
 <h3 id="configuring-webhooks-in-realhomes"><strong>Configuring Webhooks in RealHomes</strong></h3>
 <p>To configure webhooks, navigate to the path below based on your RealHomes version:</p>
-<hr>
-<h4 id="v451-and-later"><strong>v4.5.1 and Later</strong></h4>
-<div class="admonition info">
-<p class="admonition-title">Navigation Path</p>
-<p><strong>Dashboard</strong> → <strong>RealHomes</strong> → <strong>Settings</strong> → <strong>Miscellaneous</strong> → <strong>Webhooks</strong> (tab)</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="v451-and-later" name="__tabbed_1" type="radio"><input id="v450-and-earlier" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="v451-and-later">v4.5.1 and Later</label><label for="v450-and-earlier">v4.5.0 and Earlier</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="admonition success">
+<p class="admonition-title">RealHomes Settings</p>
+<p><span class="nav-step">Dashboard</span> ➤ <span class="nav-step">RealHomes</span> ➤ <span class="nav-step">Settings</span> ➤ <span class="nav-step">Miscellaneous</span> ➤ <span class="nav-step">Webhooks (tab)</span></p>
 </div>
 <p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/ere-tabs/webhooks-settings.png" data-desc-position="bottom"><img alt="RealHomes Documentation" src="../images/ere-tabs/webhooks-settings.png"></a></p>
-<hr>
-<h4 id="v450-and-earlier"><strong>v4.5.0 and Earlier</strong></h4>
-<div class="admonition info">
-<p class="admonition-title">Navigation Path</p>
-<p><strong>Dashboard</strong> → <strong>Easy Real Estate</strong> → <strong>Settings</strong> → <strong>Webhooks</strong> (tab)</p>
 </div>
-<hr>
+<div class="tabbed-block">
+<div class="admonition info">
+<p class="admonition-title">Legacy Settings</p>
+<p><span class="nav-step">Dashboard</span> ➤ <span class="nav-step">Easy Real Estate</span> ➤ <span class="nav-step">Settings</span> ➤ <span class="nav-step">Webhooks (tab)</span></p>
+</div>
+</div>
+</div>
+</div>
 <ol>
 <li>Provide the <strong>Webhook URL</strong> received from your external service provider.</li>
 <li>Enable the specific triggers (e.g., Lead Submission, Property Submission) you want to send data for.</li>
@@ -8344,6 +8291,8 @@
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
@@ -8433,7 +8382,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["search.suggest", "search.highlight", "content.tabs.link", "content.tabs"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>

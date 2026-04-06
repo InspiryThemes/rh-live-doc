@@ -3345,28 +3345,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#v451-and-later" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        v4.5.1 and Later
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#v450-and-earlier" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        v4.5.0 and Earlier
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#customizable-slugs-overview" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -8228,28 +8206,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#v451-and-later" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        v4.5.1 and Later
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#v450-and-earlier" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        v4.5.0 and Earlier
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#customizable-slugs-overview" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -8291,21 +8247,24 @@
 <h1 id="url-slugs-settings">URL Slugs Settings</h1>
 <p>The <strong>URL Slugs</strong> settings within the <strong>Easy Real Estate</strong> plugin provide full control over the URL structure for your properties, agents, agencies, and various taxonomies (locations, statuses, types, and features).</p>
 <p>To access and configure these settings, follow the navigation path based on your version of the <strong>RealHomes</strong> theme:</p>
-<hr>
-<h3 id="v451-and-later"><strong>v4.5.1 and Later</strong></h3>
-<div class="admonition info">
-<p class="admonition-title">Navigation Path</p>
-<p><strong>Dashboard</strong> → <strong>RealHomes</strong> → <strong>Settings</strong> → <strong>Post Types</strong> (tab) → <strong>URL Slugs</strong> (sub-tab)</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="v451-and-later" name="__tabbed_1" type="radio"><input id="v450-and-earlier" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="v451-and-later">v4.5.1 and Later</label><label for="v450-and-earlier">v4.5.0 and Earlier</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="admonition success">
+<p class="admonition-title">RealHomes Settings</p>
+<p><span class="nav-step">Dashboard</span> ➤ <span class="nav-step">RealHomes</span> ➤ <span class="nav-step">Settings</span> ➤ <span class="nav-step">Post Types** (tab)</span> ➤ <span class="nav-step">URL Slugs** (sub-tab)</span></p>
 </div>
 <p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/ere-tabs/url-slugs-settings.png" data-desc-position="bottom"><img alt="RealHomes Settings (v4.5.1 and Later)" src="../images/ere-tabs/url-slugs-settings.png"></a></p>
-<hr>
-<h3 id="v450-and-earlier"><strong>v4.5.0 and Earlier</strong></h3>
+</div>
+<div class="tabbed-block">
 <div class="admonition info">
-<p class="admonition-title">Navigation Path</p>
-<p><strong>Dashboard</strong> → <strong>Easy Real Estate</strong> → <strong>Settings</strong> → <strong>Post Types</strong> (tab) → <strong>URL Slugs</strong> (tab)</p>
+<p class="admonition-title">Legacy Settings</p>
+<p><span class="nav-step">Dashboard</span> ➤ <span class="nav-step">Easy Real Estate</span> ➤ <span class="nav-step">Settings</span> ➤ <span class="nav-step">Post Types** (tab)</span> ➤ <span class="nav-step">URL Slugs** (tab)</span></p>
 </div>
 <p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/ere-tabs/url-slugs.png" data-desc-position="bottom"><img alt="RealHomes Settings (v4.5.0 and Earlier)" src="../images/ere-tabs/url-slugs.png"></a></p>
-<hr>
+</div>
+</div>
+</div>
 <h3 id="customizable-slugs-overview"><strong>Customizable Slugs Overview</strong></h3>
 <p>Once you have navigated to the <strong>URL Slugs</strong> section, you can customize the following slugs:</p>
 <ul>
@@ -8339,6 +8298,8 @@
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
@@ -8428,7 +8389,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["search.suggest", "search.highlight", "content.tabs.link", "content.tabs"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>

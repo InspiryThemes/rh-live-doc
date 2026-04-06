@@ -8156,7 +8156,24 @@
 
 
 <h1 id="dashboard-agents-module">Dashboard Agents Module</h1>
-<p>You can Enable/Disable <strong>Agents</strong> module on dashboard by navigating to <strong>Dashboard → RealHomes → Customize Settings → Dashboard → Agents</strong> section.</p>
+<p>You can Enable/Disable <strong>Agents</strong> module on dashboard by navigating based on your version of the <strong>RealHomes</strong> theme:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="v451-and-later" name="__tabbed_1" type="radio"><input id="v450-and-earlier" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="v451-and-later">v4.5.1 and Later</label><label for="v450-and-earlier">v4.5.0 and Earlier</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="admonition success">
+<p class="admonition-title">RealHomes Settings</p>
+<p><span class="nav-step">Dashboard</span> ➤ <span class="nav-step">RealHomes</span> ➤ <span class="nav-step">Settings</span> ➤ <span class="nav-step">Dashboard</span> ➤ <span class="nav-step">Agents</span></p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition info">
+<p class="admonition-title">Legacy Settings</p>
+<p><span class="nav-step">Dashboard</span> ➤ <span class="nav-step">RealHomes</span> ➤ <span class="nav-step">Customize Settings</span> ➤ <span class="nav-step">Dashboard</span> ➤ <span class="nav-step">Agents</span></p>
+</div>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/dashboard/dashboard-agents-module.png" data-desc-position="bottom"><img alt="Submit Property Settings" src="../images/dashboard/dashboard-agents-module.png"></a></p>
+</div>
+</div>
+</div>
 <p>In this module, you can control the following settings.</p>
 <ul>
 <li><strong>Add New Agent Module</strong> ( Enable/Disable add new agent module )</li>
@@ -8165,7 +8182,6 @@
 <li><strong>Redirect to Selected Page After Submission</strong> ( Select the page for successful submission redirection )</li>
 <li><strong>Email Address to Received Submission Notices</strong> ( Receive notifications at specified email for new agent submissions )</li>
 </ul>
-<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/dashboard/dashboard-agents-module.png" data-desc-position="bottom"><img alt="Submit Property Settings" src="../images/dashboard/dashboard-agents-module.png"></a></p>
 
 
 
@@ -8183,6 +8199,8 @@
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
@@ -8272,7 +8290,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["search.suggest", "search.highlight", "content.tabs.link", "content.tabs"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>

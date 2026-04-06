@@ -2580,10 +2580,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#setup-search-page-in-customizer" class="md-nav__link">
+  <a href="#setup-search-page-in-theme-settings" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Setup Search Page in Customizer
+        Setup Search Page in Theme Settings
       
     </span>
   </a>
@@ -8246,10 +8246,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#setup-search-page-in-customizer" class="md-nav__link">
+  <a href="#setup-search-page-in-theme-settings" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Setup Search Page in Customizer
+        Setup Search Page in Theme Settings
       
     </span>
   </a>
@@ -8298,9 +8298,26 @@
 <p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/create-pages/properties-search-filtering.png" data-desc-position="bottom"><img alt="Create Property Search Page" src="../images/create-pages/properties-search-filtering.png"></a></p>
 <p>You can also use Google, Open Street or MapBox Elementor widgets and synchronize the map widget with the properties widget by enabling "Sync Properties Widget Data" in the widget settings.</p>
 <p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/create-pages/sync-properties-widget-data.png" data-desc-position="bottom"><img alt="Property Search Template Selection" src="../images/create-pages/sync-properties-widget-data.png"></a></p>
-<h2 id="setup-search-page-in-customizer">Setup Search Page in Customizer</h2>
-<p>After the creation of search page, you must set it up as search results page by assigning the newly created search page in <strong>Select Search Page</strong> option in <strong>Customizer</strong> settings in <strong>Dashboard → RealHomes → Customize Settings → Properties Search → Properties Search Page</strong>.</p>
+<h2 id="setup-search-page-in-theme-settings">Setup Search Page in Theme Settings</h2>
+<p>After the creation of search page, you must set it up as search results page by assigning the newly created search page in <strong>Select Search Page</strong> option. Navigate based on your version:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="v451-and-later" name="__tabbed_1" type="radio"><input id="v450-and-earlier" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="v451-and-later">v4.5.1 and Later</label><label for="v450-and-earlier">v4.5.0 and Earlier</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="admonition success">
+<p class="admonition-title">RealHomes Settings</p>
+<p><span class="nav-step">Dashboard</span> ➤ <span class="nav-step">RealHomes</span> ➤ <span class="nav-step">Settings</span> ➤ <span class="nav-step">Property Search</span> ➤ <span class="nav-step">Search Page</span></p>
+</div>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/ultra/properties-search-page-customizer-ultra-v4.5.1.png" data-desc-position="bottom"><img alt="Setup Search Page in Customizer" src="../images/ultra/properties-search-page-customizer-ultra-v4.5.1.png"></a></p>
+</div>
+<div class="tabbed-block">
+<div class="admonition info">
+<p class="admonition-title">Legacy Settings</p>
+<p><span class="nav-step">Dashboard</span> ➤ <span class="nav-step">RealHomes</span> ➤ <span class="nav-step">Customize Settings</span> ➤ <span class="nav-step">Properties Search</span> ➤ <span class="nav-step">Properties Search Page</span></p>
+</div>
 <p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/ultra/properties-search-page-customizer-ultra.png" data-desc-position="bottom"><img alt="Setup Search Page in Customizer" src="../images/ultra/properties-search-page-customizer-ultra.png"></a></p>
+</div>
+</div>
+</div>
 <h2 id="setup-search-page-in-search-form-widget-settings">Setup Search Page in Search Form Widget Settings</h2>
 <p>You can also select the search results page in Ultra Search Form widget settings.</p>
 <p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/create-pages/select-search-in-search-form-widget.png" data-desc-position="bottom"><img alt="Setup Search Page in Customizer" src="../images/create-pages/select-search-in-search-form-widget.png"></a></p>
@@ -8321,6 +8338,8 @@
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
@@ -8410,7 +8429,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["search.suggest", "search.highlight", "content.tabs.link", "content.tabs"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>

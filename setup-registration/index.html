@@ -8293,8 +8293,24 @@
 <p>To allow user registration, you need to check the <strong>Anyone can register</strong> option from <strong>Dashboard → Settings → General</strong> page and <em>Save Changes</em> as displayed in the following screenshot. Otherwise only Login form will be available for the users.</p>
 <p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/member-pages/anyone_can_register.gif" data-desc-position="bottom"><img alt="Anyone can register" src="../images/member-pages/anyone_can_register.gif"></a></p>
 <h2 id="restrict-backend-access">Restrict Backend Access</h2>
-<p>You must restrict backend access of the user level which you have setup in the previous setup. So navigate to <strong>Dashboard → RealHomes → Customize Settings → Dashboard → Basic</strong> and select <strong>Contributor</strong> (or the user role you have selected) for the first option (shown in the following screenshot).</p>
+<p>You must restrict backend access of the user level which you have setup in the previous setup. Navigate based on your version of the <strong>RealHomes</strong> theme:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="v451-and-later" name="__tabbed_1" type="radio"><input id="v450-and-earlier" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="v451-and-later">v4.5.1 and Later</label><label for="v450-and-earlier">v4.5.0 and Earlier</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="admonition success">
+<p class="admonition-title">RealHomes Settings</p>
+<p><span class="nav-step">Dashboard</span> ➤ <span class="nav-step">RealHomes</span> ➤ <span class="nav-step">Settings</span> ➤ <span class="nav-step">Dashboard</span> ➤ <span class="nav-step">Basic</span></p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition info">
+<p class="admonition-title">Legacy Settings</p>
+<p><span class="nav-step">Dashboard</span> ➤ <span class="nav-step">RealHomes</span> ➤ <span class="nav-step">Customize Settings</span> ➤ <span class="nav-step">Dashboard</span> ➤ <span class="nav-step">Basic</span></p>
+</div>
 <p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/member-pages/restrict-backend-access.png" data-desc-position="bottom"><img alt="Login &amp; Register Page Title" src="../images/member-pages/restrict-backend-access.png"></a></p>
+</div>
+</div>
+</div>
 <h2 id="create-login-register-page-optional">Create Login &amp; Register Page (Optional)</h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -8318,9 +8334,25 @@
 </div>
 <p>Publish the page once it is ready.</p>
 <h2 id="configure-settings">Configure Settings</h2>
-<p>Now you need to go to <strong>Dashboard → RealHomes → Customize Settings -&gt; Header</strong> and go to <strong>Login &amp; Register Basics</strong> section.</p>
+<p>Now you need to configure the created page in your theme settings. Navigate based on your version:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="v451-and-later_1" name="__tabbed_2" type="radio"><input id="v450-and-earlier_1" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="v451-and-later_1">v4.5.1 and Later</label><label for="v450-and-earlier_1">v4.5.0 and Earlier</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="admonition success">
+<p class="admonition-title">RealHomes Settings</p>
+<p><span class="nav-step">Dashboard</span> ➤ <span class="nav-step">RealHomes</span> ➤ <span class="nav-step">Settings</span> ➤ <span class="nav-step">Headers</span> ➤ <span class="nav-step">Login &amp; Register</span></p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition info">
+<p class="admonition-title">Legacy Settings</p>
+<p><span class="nav-step">Dashboard</span> ➤ <span class="nav-step">RealHomes</span> ➤ <span class="nav-step">Customize Settings</span> ➤ <span class="nav-step">Header</span> ➤ <span class="nav-step">Login &amp; Register Basics</span></p>
+</div>
 <p>Now select the <strong>Login Or Register</strong> page that has been created earlier as shown in image below.</p>
 <p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/member-pages/customizer-login-modal-1.jpg" data-desc-position="bottom"><img alt="Login &amp; Register Customizer Settings" src="../images/member-pages/customizer-login-modal-1.jpg"></a></p>
+</div>
+</div>
+</div>
 <p>Publish the settings and your <strong>Login &amp; Register</strong> page is ready for use.</p>
 
 
@@ -8339,6 +8371,8 @@
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
@@ -8428,7 +8462,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["search.suggest", "search.highlight", "content.tabs.link", "content.tabs"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>

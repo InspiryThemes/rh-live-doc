@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#otp-verification-setup" class="md-skip">
+        <a href="#otp-one-time-password-verification-setup" class="md-skip">
           Skip to content
         </a>
       
@@ -5432,34 +5432,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. Enabling and Configuring OTP">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#v451-and-later" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        v4.5.1 and Later
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#v450-and-earlier" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        v4.5.0 and Earlier
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -5478,6 +5450,17 @@
     <span class="md-ellipsis">
       
         3. Configuring OTP Settings in Customizer (For Social Login)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-security-brute-force-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Security &amp; Brute-Force Protection
       
     </span>
   </a>
@@ -8253,34 +8236,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. Enabling and Configuring OTP">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#v451-and-later" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        v4.5.1 and Later
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#v450-and-earlier" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        v4.5.0 and Earlier
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -8305,6 +8260,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#4-security-brute-force-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Security &amp; Brute-Force Protection
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -8322,30 +8288,36 @@
 
 
 
-<h1 id="otp-verification-setup">OTP Verification Setup</h1>
+<h1 id="otp-one-time-password-verification-setup">OTP (One-Time Password) Verification Setup</h1>
 <p>RealHomes provides built-in support for <strong>OTP (One-Time Password)</strong> verification, which enhances security by requiring users to enter a code sent to their registered email during the login process.</p>
 <hr>
 <h3 id="1-enabling-and-configuring-otp"><strong>1. Enabling and Configuring OTP</strong></h3>
 <p>To configure the OTP functional settings, follow the navigation path based on your version of the <strong>RealHomes</strong> theme:</p>
-<hr>
-<h4 id="v451-and-later"><strong>v4.5.1 and Later</strong></h4>
-<div class="admonition info">
-<p class="admonition-title">Navigation Path</p>
-<p><strong>Dashboard</strong> → <strong>RealHomes</strong> → <strong>Settings</strong> → <strong>Miscellaneous</strong> → <strong>Social</strong> (tab)</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="v451-and-later" name="__tabbed_1" type="radio"><input id="v450-and-earlier" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="v451-and-later">v4.5.1 and Later</label><label for="v450-and-earlier">v4.5.0 and Earlier</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="admonition success">
+<p class="admonition-title">RealHomes Settings</p>
+<p><span class="nav-step">Dashboard</span> ➤ <span class="nav-step">RealHomes</span> ➤ <span class="nav-step">Settings</span> ➤ <span class="nav-step">Headers</span> ➤ <span class="nav-step">Login &amp; Register</span></p>
 </div>
-<hr>
-<h4 id="v450-and-earlier"><strong>v4.5.0 and Earlier</strong></h4>
-<div class="admonition info">
-<p class="admonition-title">Navigation Path</p>
-<p><strong>Dashboard</strong> → <strong>Easy Real Estate</strong> → <strong>Settings</strong> → <strong>Social</strong> (tab)</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/member-pages/enable-otp-for-login.png" data-desc-position="bottom"><img alt="ERE Options Panel - Setup Otp Verification" src="../images/member-pages/enable-otp-for-login.png"></a></p>
 </div>
-<hr>
-<p><strong>Configuration Steps:</strong>
-1. Scroll to the bottom of the page to find the <strong>OTP Settings</strong>.
-2. <strong>Enable OTP for Login:</strong> Turn this toggle <strong>ON</strong>.
-3. <strong>OTP Max Login Attempts:</strong> Set the maximum number of incorrect attempts allowed.
-4. <strong>OTP Duration (Minutes):</strong> Define the validity lifespan of the OTP code (max 10 minutes).
-5. Click <strong>Save Changes</strong> to apply.</p>
+<div class="tabbed-block">
+<div class="admonition info">
+<p class="admonition-title">Legacy Settings</p>
+<p><span class="nav-step">Dashboard</span> ➤ <span class="nav-step">Easy Real Estate</span> ➤ <span class="nav-step">Settings</span> ➤ <span class="nav-step">Social (tab)</span></p>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Configuration Steps:</strong></p>
+<ol>
+<li>Scroll to the bottom of the page to find the <strong>OTP Settings</strong>.  </li>
+<li><strong>Enable OTP for Login:</strong> Turn this toggle <strong>ON</strong>.  </li>
+<li><strong>OTP Max Login Attempts:</strong> Set the maximum number of incorrect attempts allowed.  </li>
+<li><strong>OTP Duration (Minutes):</strong> Define the validity lifespan of the OTP code (max 10 minutes).  </li>
+<li>Click <strong>Save Changes</strong> to apply.</li>
+</ol>
 <hr>
 <h3 id="2-creating-an-otp-page-required-for-social-login"><strong>2. Creating an OTP Page (Required for Social Login)</strong></h3>
 <p>If you are using the <strong>Social Login</strong> feature, you must create a dedicated page for users to enter their OTP.</p>
@@ -8365,6 +8337,19 @@
 <li>Select your created <strong>OTP Verification</strong> page.</li>
 <li>Click <strong>Publish</strong>.</li>
 </ol>
+<hr>
+<h3 id="4-security-brute-force-protection"><strong>4. Security &amp; Brute-Force Protection</strong></h3>
+<p>RealHomes includes a robust <strong>3-Strike OTP Exhaustion Policy</strong> that protects accounts from automated brute-force attacks while remaining forgiving to typos by legitimate users.</p>
+<ul>
+<li><strong>The Session (5 Attempts):</strong> A user is granted 5 attempts (adjustable using the <em>Max Login Attempts</em> setting) to correctly enter a single 6-digit OTP code before that specific code is invalidated.</li>
+<li><strong>The Tolerance (Strikes 1 &amp; 2):</strong> If a user exhausts their attempts, the current OTP is destroyed, and the user receives a "Strike". They are then prompted to request a brand new OTP via email to try again.</li>
+<li><strong>The Hard Block (Strike 3):</strong> If a user exhausts their session <em>three separate times</em> consecutively (e.g., 15 total incorrect guesses), the system assumes a malicious attack and triggers a <strong>Hard Block</strong>:<ul>
+<li>The user's account and the attacker's IP address are locked out of the OTP system for <strong>6 hours</strong>.</li>
+<li>During this 6-hour window, no new OTP emails can be requested.</li>
+</ul>
+</li>
+<li><strong>The Clean Slate:</strong> If a user successfully verifies a correct OTP at any point before Strike 3, the system performs a full clear of all failed attempts, strikes, and IP trackers.</li>
+</ul>
 
 
 
@@ -8382,6 +8367,8 @@
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
@@ -8471,7 +8458,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["search.suggest", "search.highlight", "content.tabs.link", "content.tabs"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>

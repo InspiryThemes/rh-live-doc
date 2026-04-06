@@ -8245,48 +8245,63 @@
 
 
 <h1 id="individual-property-payments-via-stripe">Individual Property Payments Via Stripe</h1>
-<p>To enable Stripe payments for the individual properties you would need to install and configure the <a href="https://wordpress.org/plugins/inspiry-stripe-payments/">Inspiry Stripe Payments for RealHomes</a> plugin. Plesae follow the steps given blow.</p>
+<p>To enable Stripe payments for individual properties, install and configure the <a href="https://wordpress.org/plugins/inspiry-stripe-payments/">Inspiry Stripe Payments for RealHomes</a> plugin.</p>
 <div class="admonition important">
 <p class="admonition-title">Prerequisite</p>
-<p>Before you start following the Stripe payments setup guide, please make sure the <strong>RealHomes theme</strong> and its <strong>Easy Real Estate plugin</strong> are installed and activated on your site.</p>
+<p>Before starting, ensure the <strong>RealHomes theme</strong> and its <strong>Easy Real Estate plugin</strong> are installed and activated.</p>
 </div>
 <h2 id="install-activate-inspiry-stripe-payments-for-realhomes-plugin">Install &amp; Activate 'Inspiry Stripe Payments for RealHomes' Plugin</h2>
 <ol>
 <li>
-<p>Navigate to <strong>Dashboard → Plugins → Add New</strong> and search for <strong>Inspiry Stripe Payments</strong> as displayed in the screenshot below: </p>
+<p>Navigate to <strong>Dashboard → Plugins → Add New</strong> and search for <strong>Inspiry Stripe Payments</strong>. </p>
 <p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/other-features/search-inspiry-stripe-payments.png" data-desc-position="bottom"><img alt="Install Inspiry Stripe Payments Plugin" src="../images/other-features/search-inspiry-stripe-payments.png"></a></p>
 </li>
 <li>
-<p>Once found, <strong>Install</strong> and <strong>Activate</strong>  the plugin.</p>
+<p><strong>Install</strong> and <strong>Activate</strong> the plugin.</p>
 </li>
 </ol>
 <h2 id="configure-plugin-settings">Configure Plugin Settings</h2>
 <ol>
-<li>
-<p>Navigate to <strong>Dashboard → Easy Real Estate → Stripe Settings</strong> page. This page contains the following settings.</p>
-<ul>
-<li>Enable/Disable Stripe Payments.</li>
-<li>Stripe Account API Keys.</li>
-<li>Currency Code (in which you want to charge your users).</li>
-<li>Payment Amount Per Property.</li>
-<li>Payment Button Label.</li>
-<li>Publish Submited Property after Payment.</li>
-</ul>
-</li>
+<li>Navigate to the Stripe settings page based on your version:</li>
 </ol>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="v451-and-later" name="__tabbed_1" type="radio"><input id="v450-and-earlier" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="v451-and-later">v4.5.1 and Later</label><label for="v450-and-earlier">v4.5.0 and Earlier</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="admonition success">
+<p class="admonition-title">RealHomes Settings</p>
+<p><span class="nav-step">Dashboard</span> ➤ <span class="nav-step">RealHomes</span> ➤ <span class="nav-step">Settings</span> ➤ <span class="nav-step">Stripe Settings</span></p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition info">
+<p class="admonition-title">Legacy Settings</p>
+<p><span class="nav-step">Dashboard</span> ➤ <span class="nav-step">Easy Real Estate</span> ➤ <span class="nav-step">Stripe Settings</span></p>
+</div>
 <p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/other-features/inspiry-stripe-payments-settings.png" data-desc-position="bottom"><img alt="Stripe Settings" src="../images/other-features/inspiry-stripe-payments-settings.png"></a></p>
+</div>
+</div>
+</div>
+<p>This page contains the following settings:</p>
+<div class="codehilite"><pre><span></span><code>- Enable/Disable Stripe Payments.
+- Stripe Account API Keys.
+- Currency Code.
+- Payment Amount Per Property.
+- Payment Button Label.
+- Publish Submitted Property after Payment.
+</code></pre></div>
+
 <ol>
 <li>
-<p>Configure all the settings as per your preferences. For help to get your Stripe account <strong>Publishable Key</strong> and <strong>Secret Key</strong> you can follow <a href="https://inspirythemes.com/realhomes-memberships-setup/#retrieving-stripe-api-keys">Retrieving the API Keys</a> section.</p>
+<p>Configure all settings. For help retrieving your <strong>Publishable Key</strong> and <strong>Secret Key</strong>, refer to <a href="https://inspirythemes.com/realhomes-memberships-setup/#retrieving-stripe-api-keys">Retrieving the Stripe API Keys</a>.</p>
 </li>
 <li>
-<p>Once done, visit <em>My Properties</em> page on your website to view Stripe payment button for individual properties.</p>
+<p>Once done, visit the <em>My Properties</em> page to view the Stripe payment button.</p>
 <p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/other-features/my-properties-payment-buttons.png" data-desc-position="bottom"><img alt="My Properties Payment Buttons" src="../images/other-features/my-properties-payment-buttons.png"></a></p>
 </li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>In case of any issue, you can signup/login to our <a href="https://support.inspirythemes.com/login-register/">support website</a> and <a href="https://support.inspirythemes.com/ask-question/">ask your question</a> over there.</p>
+<p>In case of any issue, you can signup/login to our <a href="https://support.inspirythemes.com/login-register/">support website</a> and <a href="https://support.inspirythemes.com/ask-question/">ask your question</a>.</p>
 </div>
 
 
@@ -8305,6 +8320,8 @@
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
@@ -8394,7 +8411,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["search.suggest", "search.highlight", "content.tabs.link", "content.tabs"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>

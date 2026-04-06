@@ -8345,17 +8345,32 @@
 <p class="admonition-title">Important</p>
 <p>You must <strong>enable Google Places API</strong> for your Google Maps API Project, otherwise Geo Location Radius Search won't work.</p>
 </div>
-<p>To activate the <strong>Geo Location</strong> feature, follow these steps:</p>
+<p>To activate the <strong>Geo Location</strong> feature, follow estos pasos:</p>
 <ol>
-<li>Go to <strong>Dashboard → RealHomes → Customize Settings → Properties Search → Search Form Locations</strong>.</li>
-<li>Select <strong>Geo Location</strong> for <strong>Location Field Type</strong>.</li>
+<li>Navigate to the <strong>Locations</strong> section based on your version of the <strong>RealHomes</strong> theme:</li>
 </ol>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="v451-and-later" name="__tabbed_1" type="radio"><input id="v450-and-earlier" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="v451-and-later">v4.5.1 and Later</label><label for="v450-and-earlier">v4.5.0 and Earlier</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="admonition success">
+<p class="admonition-title">RealHomes Settings</p>
+<p><span class="nav-step">Dashboard</span> ➤ <span class="nav-step">RealHomes</span> ➤ <span class="nav-step">Settings</span> ➤ <span class="nav-step">Property Search</span> ➤ <span class="nav-step">Locations</span></p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition info">
+<p class="admonition-title">Legacy Settings</p>
+<p><span class="nav-step">Dashboard</span> ➤ <span class="nav-step">RealHomes</span> ➤ <span class="nav-step">Customize Settings</span> ➤ <span class="nav-step">Properties Search</span> ➤ <span class="nav-step">Search Form Locations</span></p>
+</div>
+</div>
+</div>
+</div>
 <h3 id="geo-location-setup-in-modern"><strong>Geo Location Setup in Modern</strong></h3>
 <p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/advanced-search/geo-location-demonstration.gif" data-desc-position="bottom"><img alt="Geo Location Setup" src="../images/advanced-search/geo-location-demonstration.gif"></a></p>
 <h3 id="geo-location-setup-in-ultra"><strong>Geo Location Setup in Ultra</strong></h3>
 <p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/advanced-search/geo-location-setup-ultra.gif" data-desc-position="bottom"><img alt="Geo Location Setup" src="../images/advanced-search/geo-location-setup-ultra.gif"></a></p>
 <h3 id="geo-location-settings"><strong>Geo Location Settings</strong></h3>
-<p>In this section at <strong>Dashboard → RealHomes → Customize Settings → Properties Search → Search Form Locations</strong>, you can also modify the following settings for Geo Location Radius Search:</p>
+<p>In the same <strong>Locations</strong> section mentioned above, you can also modify the following settings for Geo Location Radius Search:</p>
 <p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/advanced-search/geo-location-setup.png" data-desc-position="bottom"><img alt="Geo Location Setup" src="../images/advanced-search/geo-location-setup.png"></a></p>
 <h4 id="radius-range-type"><strong>Radius Range Type</strong></h4>
 <p>You can choose whether to display the radius range in miles or kilometers.</p>
@@ -8380,6 +8395,8 @@
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
@@ -8469,7 +8486,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["search.suggest", "search.highlight", "content.tabs.link", "content.tabs"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>

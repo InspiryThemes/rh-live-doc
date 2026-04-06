@@ -8245,49 +8245,64 @@
 
 
 <h1 id="individual-property-payments-via-paypal">Individual Property Payments Via PayPal</h1>
-<p>To enable PayPal payments for the individual properties you would need to install and configure the <a href="https://wordpress.org/plugins/realhomes-paypal-payments/">RealHomes PayPal Payments</a> plugin. Plesae follow the steps given blow.</p>
+<p>To enable PayPal payments for individual properties, install and configure the <a href="https://wordpress.org/plugins/realhomes-paypal-payments/">RealHomes PayPal Payments</a> plugin. </p>
 <div class="admonition important">
 <p class="admonition-title">Prerequisite</p>
-<p>Before you start following the PayPal payments setup guide, please make sure the <strong>RealHomes theme</strong> and its <strong>Easy Real Estate plugin</strong> are installed and activated on your site.</p>
+<p>Before starting, ensure the <strong>RealHomes theme</strong> and its <strong>Easy Real Estate plugin</strong> are installed and activated.</p>
 </div>
 <h2 id="install-activate-realhomes-paypal-payments-plugin">Install &amp; Activate 'RealHomes PayPal Payments' Plugin</h2>
 <ol>
 <li>
-<p>Navigate to <strong>Dashboard → Plugins → Add New</strong> and search for <strong>RealHomes PayPal Payments</strong> as displayed in the screenshot below: </p>
+<p>Navigate to <strong>Dashboard → Plugins → Add New</strong> and search for <strong>RealHomes PayPal Payments</strong>. </p>
 <p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/other-features/search-realhomes-paypal-payments.png" data-desc-position="bottom"><img alt="Install RealHomes PayPal Payments Plugin" src="../images/other-features/search-realhomes-paypal-payments.png"></a></p>
 </li>
 <li>
-<p>Once found, <strong>Install</strong> and <strong>Activate</strong> the plugin.</p>
+<p><strong>Install</strong> and <strong>Activate</strong> the plugin.</p>
 </li>
 </ol>
 <h2 id="configure-plugin-settings">Configure Plugin Settings</h2>
 <ol>
-<li>
-<p>Navigate to <strong>Dashboard → Easy Real Estate → PayPal Settings</strong> page. This page contains the following settings.</p>
-<ul>
-<li>Enable/Disable PayPal Payments.</li>
-<li>Enable/Disable PayPal Sandbox Mode for testing.</li>
-<li>PayPal account API Keys.</li>
-<li>Currency Code (in which you want to charge your users).</li>
-<li>Payment Amount Per Property.</li>
-<li>Publish Submited Property after Payment.</li>
-<li>Redirect Page (after successfull PayPal payment).</li>
-</ul>
-</li>
+<li>Navigate to the PayPal settings page based on your version:</li>
 </ol>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="v451-and-later" name="__tabbed_1" type="radio"><input id="v450-and-earlier" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="v451-and-later">v4.5.1 and Later</label><label for="v450-and-earlier">v4.5.0 and Earlier</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="admonition success">
+<p class="admonition-title">RealHomes Settings</p>
+<p><span class="nav-step">Dashboard</span> ➤ <span class="nav-step">RealHomes</span> ➤ <span class="nav-step">Settings</span> ➤ <span class="nav-step">PayPal Settings</span></p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition info">
+<p class="admonition-title">Legacy Settings</p>
+<p><span class="nav-step">Dashboard</span> ➤ <span class="nav-step">Easy Real Estate</span> ➤ <span class="nav-step">PayPal Settings</span></p>
+</div>
 <p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/other-features/realhomes-paypal-payments-settings.png" data-desc-position="bottom"><img alt="PayPal Settings" src="../images/other-features/realhomes-paypal-payments-settings.png"></a></p>
+</div>
+</div>
+</div>
+<p>This page contains the following settings:</p>
+<div class="codehilite"><pre><span></span><code><span class="o">-</span><span class="w"> </span><span class="nv">Enable</span><span class="o">/</span><span class="nv">Disable</span><span class="w"> </span><span class="nv">PayPal</span><span class="w"> </span><span class="nv">Payments</span>.
+<span class="o">-</span><span class="w"> </span><span class="nv">Enable</span><span class="o">/</span><span class="nv">Disable</span><span class="w"> </span><span class="nv">PayPal</span><span class="w"> </span><span class="nv">Sandbox</span><span class="w"> </span><span class="nv">Mode</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nv">testing</span>.
+<span class="o">-</span><span class="w"> </span><span class="nv">PayPal</span><span class="w"> </span><span class="nv">account</span><span class="w"> </span><span class="nv">API</span><span class="w"> </span><span class="nv">Keys</span>.
+<span class="o">-</span><span class="w"> </span><span class="nv">Currency</span><span class="w"> </span><span class="nv">Code</span>.
+<span class="o">-</span><span class="w"> </span><span class="nv">Payment</span><span class="w"> </span><span class="nv">Amount</span><span class="w"> </span><span class="nv">Per</span><span class="w"> </span><span class="nv">Property</span>.
+<span class="o">-</span><span class="w"> </span><span class="nv">Publish</span><span class="w"> </span><span class="nv">Submitted</span><span class="w"> </span><span class="nv">Property</span><span class="w"> </span><span class="nv">after</span><span class="w"> </span><span class="nv">Payment</span>.
+<span class="o">-</span><span class="w"> </span><span class="nv">Redirect</span><span class="w"> </span><span class="nv">Page</span><span class="w"> </span><span class="ss">(</span><span class="nv">after</span><span class="w"> </span><span class="nv">successful</span><span class="w"> </span><span class="nv">payment</span><span class="ss">)</span>.
+</code></pre></div>
+
 <ol>
 <li>
-<p>Configure all the settings as per your preferences. For help to get your PayPal account <strong>Client ID</strong> and <strong>Client Secret</strong> you can follow <a href="https://inspirythemes.com/realhomes-memberships-setup/#retrieving-paypal-client-secret-id">Retrieving the Client ID &amp; Client Secret</a> section.</p>
+<p>Configure all settings as per your preferences. For help retrieving your <strong>Client ID</strong> and <strong>Client Secret</strong>, refer to the <a href="https://inspirythemes.com/realhomes-memberships-setup/#retrieving-paypal-client-secret-id">Retrieving the Client ID &amp; Client Secret</a> section.</p>
 </li>
 <li>
-<p>Once done, visit <em>My Properties</em> page on your website to view PayPal payment button for individual properties.</p>
+<p>Once done, visit the <em>My Properties</em> page to view the PayPal payment button for individual properties.</p>
 <p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../images/other-features/my-properties-payment-buttons.png" data-desc-position="bottom"><img alt="My Properties Payment Buttons" src="../images/other-features/my-properties-payment-buttons.png"></a></p>
 </li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>In case of any issue, you can signup/login to our <a href="https://support.inspirythemes.com/login-register/">support website</a> and <a href="https://support.inspirythemes.com/ask-question/">ask your question</a> over there.</p>
+<p>In case of any issue, you can signup/login to our <a href="https://support.inspirythemes.com/login-register/">support website</a> and <a href="https://support.inspirythemes.com/ask-question/">ask your question</a>.</p>
 </div>
 
 
@@ -8306,6 +8321,8 @@
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
@@ -8395,7 +8412,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["search.suggest", "search.highlight", "content.tabs.link", "content.tabs"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
